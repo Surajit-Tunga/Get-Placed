@@ -21,4 +21,4 @@
 - Bytecode is an intermediate representation of code, typically generated during compilation.
 - Secure because of code running on Virtual Machine.
 - Developed with vision of backward compatibility. (new versions can work with older versions).
-- JAVA is robust due to strong memory management, exception handling and type checking mechanisms, which help in preventing system crashes & ensuring  reliable performance.
+- JAVA is robust due to strong memory management, exception handling and type checking mechanisms, which help in preventing system crashes & ensuring  reliable performance. 38
