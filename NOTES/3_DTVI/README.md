@@ -102,45 +102,6 @@ Hello "Welcome"
 ```
 ---
 
-1. Task: Show the following patterns using single print statement with help of escape sequences.
-
-```java
-public class Patterns {
-    public static void main(String[] args){
-        System.out.println("Right Half Pyramid");
-        System.out.println("* \n* * \n* * * \n* * * * \n* * * * *");
-
-        System.out.println("Reverse Right Half Pyramid");
-        System.out.println("* * * * * \n* * * * \n* * * \n* * \n* ");
-
-        System.out.println("Left Half Pyramid");
-        System.out.println("        * \n      * *  \n    * * * \n  * * * * \n* * * * *");
-    }
-}
-```
-
-```text
-Right Half Pyramid
-* 
-* * 
-* * * 
-* * * * 
-* * * * *
-Reverse Right Half Pyramid
-* * * * * 
-* * * * 
-* * * 
-* * 
-* 
-Left Half Pyramid
-        * 
-      * *  
-    * * * 
-  * * * * 
-* * * * *
-```
-----
-
 ## User Input:
 
 ```java
@@ -173,35 +134,6 @@ Good Morning Surajit
 
 ---
 
-
-2. Task: Create a program to add 2 num:
-
-```java
-import java.util.Scanner;
-
-public class TwoSum {
-    public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        System.out.println("Eneter 1st Number:");
-        int num1 = input.nextInt();
-        System.out.println("Eneter 2nd Number:");
-        int num2 = input.nextInt();
-        int sum = num1 + num2;
-        System.out.println("Result:" + sum);
-
-    }
-}
-```
-```text
-Eneter 1st Number:
-6
-Eneter 2nd Number:
-2
-Result:8
-```
-
----
-
 ## Type Convertion:
 
 ![](../img/TC.png)
@@ -218,4 +150,3 @@ int myInt = (int) 5.5; // float 5.5 will concerted into int.
 ```
 ---
 
-## Practice Exercise:

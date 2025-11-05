@@ -94,4 +94,25 @@ Result:8
 ```
 ---
 
-4. 
+4. Create a program to swap 2 numbers:
+
+```java
+public class Swap {
+    public static void main (String args[]) {
+        int a = 10;
+        int b = 20;
+        System.out.println("a , b =" + a + ", " + b);
+        int temp = a;
+        a = b;
+        b = temp;
+        System.out.println("a , b =" + a + ", " + b);        
+    }
+}
+```
+- output:
+```text
+a , b =10, 20
+a , b =20, 10
+```
+
+---
