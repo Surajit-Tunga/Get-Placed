@@ -98,3 +98,74 @@ After postfix decrement:
 a = 1
 e = 2
 ```
+
+## If-Else:
+
+```text
+ if (condition) {
+    ---- execute when condition is true & Skip others.
+} else {
+    --- execute when condition is false & Skip others.
+}
+```
+
+```java
+import java.util.Scanner;
+public class IfElse { 
+    public static void main(String[] args ){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter your age: ");
+
+        int age = sc.nextInt();
+
+        // If-Else Statement
+        if(age >= 18){
+            System.out.println("You are an adult.");
+        } else {
+            System.out.println("You are a minor.");
+        }
+    }
+}
+```
+```java
+ // short hand for one statement
+ if (age>=18) System.out.println("You are an adult.");
+ else System.out.println("You are a minor.");
+ // Or
+String result = (age >= 18) ? "You are an adult." : "You are a minor.";
+```
+
+- Output:
+```text
+Enter your age: 50
+You are an adult.
+```
+---
+
+## If-Else Ladder:
+
+```java
+public class IfElseLadder { 
+    public static void main(String[] args) {
+        int number = 75;
+
+        if (number > 90) {
+            System.out.println("Grade A");
+        } else if (number > 80) {
+            System.out.println("Grade B");
+        } else if (number > 70) {
+            System.out.println("Grade C");
+        } else if (number > 60) {
+            System.out.println("Grade D");
+        } else {
+            System.out.println("Grade F");
+        }
+    }
+}
+```
+- Output:
+```text
+Grade C
+```
+---
+## (5:36:25) Relational Operators:

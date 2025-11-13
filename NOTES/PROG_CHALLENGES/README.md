@@ -116,4 +116,27 @@ a , b =20, 10
 ```
 ---
 
-5. 
+5. Write a java program to convert Fahrenheit to Celsius:
+
+```java
+import java.util.Scanner;
+
+public class F2C {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter temperature in Fahrenheit: ");
+        double fahrenheit = sc.nextDouble();
+        double celsius = (fahrenheit - 32) * 5 / 9;
+        System.out.printf("Temperature in Celsius: %.2f\n", celsius);
+        sc.close();
+    }
+}
+```
+- Output:
+```text 
+Enter temperature in Fahrenheit: 80.6
+Temperature in Celsius: 27.00
+```
+---
+
+6. 
