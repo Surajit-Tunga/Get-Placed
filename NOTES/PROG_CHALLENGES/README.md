@@ -139,4 +139,25 @@ Temperature in Celsius: 27.00
 ```
 ---
 
-6. 
+6. Create a Program That Determine greatest of the three number in JAVA.
+
+```java
+public class G3{
+    public static void main(String[] args){
+        int a=5,b=7,c=9;
+        if (a > b && a > c) {
+            System.out.print(a + " is greater then others.");
+        } else if (b > a && b > c) {
+            System.out.print(b + " is greater then others.");
+        } else {
+            System.out.print(c + " is greater then others.");
+        }
+    }
+}
+```
+- Output:
+```text
+9 is greater then others.
+```
+---
+7. 

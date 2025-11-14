@@ -168,4 +168,59 @@ public class IfElseLadder {
 Grade C
 ```
 ---
-## (5:36:25) Relational Operators:
+## Relational Operators:
+
+- A relational operator in Java is used to compare two values and return a boolean result (true or false).
+- Order of Relational Operator is less them Arithmatic operators.
+
+- `==` → Checks if two values are **equal**.  
+- `!=` → Checks if two values are **not equal**.  
+- `>` → True if left value is **greater than** right value.  
+- `<` → True if left value is **less than** right value.  
+- `>=` → True if left value is **greater than or equal** to right value.  
+- `<=` → True if left value is **less than or equal** to right value. 
+
+```java
+public class RelationalExample {
+    public static void main(String[] args) {
+        int a = 10, b = 20;
+
+        System.out.println(a == b);  // false
+        System.out.println(a != b);  // true
+        System.out.println(a > b);   // false
+        System.out.println(a < b);   // true
+        System.out.println(a >= b);  // false
+        System.out.println(a <= b);  // true
+    }
+}
+```
+---
+## Logical Operators: 
+- Logical operators in Java are used to combine multiple boolean expressions and return a boolean result.
+
+- **&& (Logical AND)** → Returns true only if **both** conditions are true.  
+- **|| (Logical OR)** → Returns true if **any one** of the conditions is true.  
+- **! (Logical NOT)** → Reverses the boolean value (true → false, false → true).  
+
+```java
+public class LogicalExample {
+    public static void main(String[] args) {
+        boolean x = true, y = false;
+
+        System.out.println(x && y);  // Logical AND → false
+        System.out.println(x || y);  // Logical OR  → true
+        System.out.println(!x);      // Logical NOT → false
+    }
+}
+```
+---
+## Java Operator Precedence:
+
+![](../img/Order.png)
+
+- **Precedence** → Determines **which operator is evaluated first** in an expression.
+- **Associativity** → Determines **the direction of evaluation** when operators have the same precedence (left-to-right or right-to-left).
+
+---
+
+## 6.41 
