@@ -8,3 +8,4 @@
 ## BASIC PROBLEMS
 
 - [1. Check Even or Odd. ](1_EvenOdd/README.md)
+- [2. Program for multiplication table. ](2_Table/README.md)
