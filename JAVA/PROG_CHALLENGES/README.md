@@ -160,4 +160,36 @@ public class G3{
 9 is greater then others.
 ```
 ---
-7. 
+7.  Write a program to check if a given number is even or odd with bitwise operator.
+
+```java
+import java.util.Scanner;
+
+public class EvenOddBitwise {
+
+    public static boolean isEven(int num) {
+        if((num&1)==1) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a Number:");
+        int num = sc.nextInt();
+        if (isEven(num)){
+            System.out.println("Even Number");
+        } else {
+            System.out.println("Odd Number");
+        }
+        sc.close();
+    }
+}
+```
+- Output:
+```text
+Enter a Number:7
+Odd Number
+```
+---

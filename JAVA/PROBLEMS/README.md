@@ -28,3 +28,4 @@ Left Half Pyramid
 4. Create a program to swap 2 numbers.
 5. Write a java program to convert Fahrenheit to Celsius.
 6. Create a Program That Determine greatest of the three number in JAVA.
+7. Write a program to check if a given number is even or odd with bitwise operator.

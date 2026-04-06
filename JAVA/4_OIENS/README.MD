@@ -224,3 +224,17 @@ public class LogicalExample {
 ---
 
 ## Intro to Bitwise Operators:
+
+1. AND Operator (&): Performs on two integers.Each bit of the output is 1 if the corresponding bits of both operands are 1, otherwise 0.
+
+2. OR Operator (|): Performs on two integers. Each bit of the output is 0 if the corresponding bits of both operands are 0, otherwise 1.
+
+3. XOR Operator (^): Performs on two integers. Each bit of the output is 1 if the corresponding bits of the operands are different.
+
+4. NOT Operator (~): Performs a bitwise complement. It inverts the bits of its operand (0 becomes 1, and 1 becomes 0).
+
+5. Left Shift Operator (<<): Shifts the left operand’s bits to the left by the number of positions specified by the right operand. The new rightmost bits are filled with zeros.
+
+6. Right Shift Operator (>>): Shifts the left operand’s bits to the right. If the left operand is positive, zeros are filled in the new leftmost bits. If negative, ones are filled in. 
+
+---
