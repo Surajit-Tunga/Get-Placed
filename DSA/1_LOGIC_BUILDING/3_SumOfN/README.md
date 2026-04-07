@@ -1,6 +1,6 @@
 # Program for sum of n natural numbers:
 
-## My Approch:
+## Solution:
 
 ```java
 import java.util.Scanner;

@@ -1,6 +1,6 @@
 # Check the number is Even or Odd:
 
-## My approch:
+## Solution:
 
 ```java
 import java.util.Scanner;

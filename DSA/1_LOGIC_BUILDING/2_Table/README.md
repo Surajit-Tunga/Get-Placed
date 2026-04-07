@@ -1,6 +1,6 @@
 # Program for multiplication table:
 
-## My Approch:
+## Solution:
 ```java
 import java.util.Scanner;
 
