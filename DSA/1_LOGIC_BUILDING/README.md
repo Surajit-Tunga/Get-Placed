@@ -11,3 +11,4 @@
 - [2. Program for multiplication table. ](2_Table/README.md)
 - [3. Program for sum of n natural numbers. ](3_SumOfN/README.md)
 - [4. Closest to n and Divisible by m. ](4_Closest/README.md)
+- [5. Print Solid Rectangle Star Pattern. ](5_SolidRectPattern/README.md)
