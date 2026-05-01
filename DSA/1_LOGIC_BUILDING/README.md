@@ -15,3 +15,6 @@
 - [6. Sum of squares of first n natural numbers](6_SumOfSq/README.md)
 - [7. Swap Two Numbers](7_SwapTwo/README.md)
 - [8. The dice problem](8_Dice/README.md)
+
+## BASIC PATTERNS
+
