@@ -9,6 +9,7 @@
 - [3. DATA TYPE, VARIABLE & INPUTS ](JAVA/3_DTVI/README.md)
 - [4. OPERATORS IN JAVA](JAVA/4_OIENS/README.MD)
 - [5. While Loop, Methods & Arrays](JAVA/5_Loop/README.md)
+- [6. Classes & Objects](JAVA/6_Classes_Objects/README.md)
 
 
 
