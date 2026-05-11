@@ -178,4 +178,253 @@ class Car {
 
 --- 
 
-## Static Keyword: 2.48
+## Static Keyword:
+
+- **Static Variable:** Belong to the class, not individual instances. Shared among all instances of the class.
+- **Static Mehtod:** Can be called without createing an object of the call. Can only directly access static variables and other static methods.
+- Static blocks cannot directly access non-static menbers of the class.
+- Example:
+```java
+class Car {
+
+    // Static variable (shared by all objects)
+    static int wheels = 4;
+
+    // Non-static variable
+    String brand;
+
+    // Constructor
+    Car(String b) {
+        brand = b;
+    }
+
+    // Static method
+    static void showWheels() {
+        System.out.println("Wheels: " + wheels);
+
+        // Cannot directly access non-static variable
+        // System.out.println(brand); ❌ Error
+    }
+
+    // Static block
+    static {
+        System.out.println("Static block executed");
+
+        // Cannot access non-static members directly
+        // System.out.println(brand); ❌ Error
+    }
+
+    public static void main(String[] args) {
+
+        // Calling static method without object
+        Car.showWheels();
+
+        // Creating objects
+        Car c1 = new Car("Toyota");
+        Car c2 = new Car("BMW");
+
+        System.out.println(c1.brand);
+        System.out.println(c2.brand);
+
+        // Shared static variable
+        System.out.println(Car.wheels);
+    }
+}
+```
+
+--- 
+
+## Constructor:
+
+- Constructors are used to initialize objects with values when they are created.
+- A costructor must have same name as the class in which it is declered.
+- It has not any return type, not even void.
+- A constructor automatically initializes object values when the object is created in the class.
+
+- Example:
+```java
+class BankAccount {
+    String name;
+    double balance;
+
+    // Constructor
+    BankAccount(String n, double b) {
+        name = n;
+        balance = b;
+    }
+
+    void showDetails() {
+        System.out.println("Name: " + name);
+        System.out.println("Balance: " + balance);
+    }
+
+    public static void main(String[] args) {
+
+        // Constructor automatically initializes object values
+        BankAccount acc1 = new BankAccount("Rahul", 5000);
+
+        acc1.showDetails();
+    }
+}
+```
+#### Type of Constructor:
+
+- **Default Constructor:** If no constructor is explicitly defined, java provides a default constructor that initializes all member variables to the default values.
+- Example:
+
+```java
+class Car {
+    String brand;
+    int speed;
+
+    // No constructor defined
+
+    void show() {
+        System.out.println("Brand: " + brand);
+        System.out.println("Speed: " + speed);
+    }
+
+    public static void main(String[] args) {
+
+        // Java provides default constructor
+        Car c1 = new Car();
+
+        c1.show();
+    }
+}
+```
+
+- **Parameterized Constructor:** Constructor have parameters to pass values when creating an object, allowing for different customization.
+- Example:
+
+```java
+class Car {
+    String brand;
+    int speed;
+
+    // Parameterized constructor
+    Car(String b, int s) {
+        brand = b;
+        speed = s;
+    }
+
+    void show() {
+        System.out.println("Brand: " + brand);
+        System.out.println("Speed: " + speed);
+    }
+
+    public static void main(String[] args) {
+
+        // Passing values during object creation
+        Car c1 = new Car("Toyota", 120);
+
+        c1.show();
+    }
+}
+```
+
+#### Constructor Chaining:
+
+- Using "this()" to call another constructor in the same class.
+- "this()" must be the first statement in a constructor.
+- Constractor chaining cant form a loop. It must have a terminating point.
+- Example:
+
+```java
+class Car {
+    String brand;
+
+    // Default constructor
+    Car() {
+        this("Toyota"); // calls parameterized constructor
+    }
+
+    // Parameterized constructor
+    Car(String b) {
+        brand = b;
+    }
+
+    void show() {
+        System.out.println("Brand: " + brand);
+    }
+
+    public static void main(String[] args) {
+        Car c1 = new Car();
+
+        c1.show();
+    }
+}
+```
+
+---
+
+## Code Blocks:
+
+- Code block"{---}" determines the scope of a varible.
+- Variable inside a block cant be accesed outside it.
+- Block without static run each time when an instance is created.
+- Block without static run once when the class is loaded.
+- Example:
+
+```java
+class Car {
+
+    // Global variable
+    String brand = "Toyota";
+
+    // Static block (runs once)
+    static {
+        System.out.println("Static Block Executed");
+    }
+
+    // Non-static block (runs every object creation)
+    {
+        int speed = 120; // local variable
+
+        System.out.println("Brand: " + brand);
+        System.out.println("Speed: " + speed);
+    }
+
+    public static void main(String[] args) {
+
+        Car c1 = new Car();
+        Car c2 = new Car();
+
+        // System.out.println(speed); ❌ Cannot access outside block
+    }
+}
+```
+
+---
+
+## Q. Create a Book Class for Library System:
+
+- **Instance variables:** title, author, isbn.
+- **Static variable:** totalBooks, a counter for the total number of book instances.
+- **Instance methods:** borrowBook(), returnBook().
+- **Static method:** getTotalBooks(), to get the total number of books in the library.
+
+- Solution:
+
+```java
+
+```
+
+---
+
+## Q. Design a Course class.
+
+- **Instance variables:** courseName, enrolledStudents.
+- **Static variable:** maxCapacity, the maximum number of students for any course.
+- **Instance methods:** enrollStudent(String studentName), unenrollStudent(String studentName).
+- **Static method:** setMaxCapacity(int capacity), to set the maximum capacity for courses.
+
+- Solution:
+
+```java
+
+```
+
+---
+
+## 326
