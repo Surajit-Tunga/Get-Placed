@@ -363,7 +363,7 @@ class Car {
 - Code block"{---}" determines the scope of a varible.
 - Variable inside a block cant be accesed outside it.
 - Block without static run each time when an instance is created.
-- Block without static run once when the class is loaded.
+- Block with static run once when the class is loaded.
 - Example:
 
 ```java
@@ -407,7 +407,110 @@ class Car {
 - Solution:
 
 ```java
+class Book {
 
+    // Static variable shared by all objects
+    static int totalBooks; 
+
+    // Instance variables
+    String author;
+    String title;
+    String isbn;
+    boolean isBorrowed;
+
+    // Static block
+    // Runs only once when class is loaded
+    static {
+        totalBooks = 0;
+    }
+
+    // Non-static block
+    // Runs every time an object is created
+    {
+        totalBooks++;
+    }
+
+    // Parameterized constructor
+    // Used to initialize book details
+    Book(String author, String title, String isbn){
+        this.author = author;
+        this.title = title;
+        this.isbn = isbn;
+    }
+
+    // Constructor overloading
+    // If only ISBN is given, default values are used
+    Book(String isbn) {
+        this(isbn, "Unknown", "Unknown");
+    }
+
+    // Static method
+    // Can be called using class name
+    static int getTotalBooks(){
+        return totalBooks;
+    }
+
+    // Method to borrow a book
+    void borrowBook() {
+
+        // If already borrowed
+        if (isBorrowed) {
+            System.out.println("Book is already borrowed.");
+        } 
+        
+        // Borrow the book
+        else {
+            this.isBorrowed = true;
+            System.out.println("Book is successfully borrowed.");
+        }
+    }
+
+    // Method to return a book
+    void returnBook(){
+
+        // If borrowed, return it
+        if(isBorrowed) {
+            this.isBorrowed = false;
+            System.out.println("Book is Successfully returned.");
+        } 
+        
+        // If not borrowed
+        else {
+            System.out.println("Book is not borrowed yet.");
+        }
+    }
+
+    public static void main(String[] args){
+
+        // Creating object using constructor
+        Book History = new Book(
+            "Bipin Charndra",
+            "Mordern Indian History",
+            "1H"
+        );
+
+        // Creating object using overloaded constructor
+        Book Geography = new Book("1G");
+
+        // Calling static method
+        System.out.println(Book.getTotalBooks());
+
+        // Calling instance methods
+        History.borrowBook();
+        History.borrowBook();
+        History.returnBook();
+        History.borrowBook();
+    }
+}
+```
+- Output:
+
+```text 
+2
+Book is successfully borrowed.
+Book is already borrowed.
+Book is Successfully returned.
+Book is successfully borrowed.
 ```
 
 ---
@@ -422,9 +525,100 @@ class Car {
 - Solution:
 
 ```java
+class Course {
 
+    // Instance variables
+    String courseName;
+    int enrolledStudents;
+
+    // Static variable
+    // Shared by all Course objects
+    static int maxCapacity;
+
+    // Static block
+    // Runs once when class is loaded
+    static {
+        maxCapacity = 100;
+    }
+
+    // Constructor
+    // Used to initialize course name
+    Course(String courseName) {
+        this.courseName = courseName;
+        this.enrolledStudents = 0;
+    }
+
+    // Static method
+    // Used to change maximum capacity
+    static void setMaxCapacity(int capacity) {
+        maxCapacity = capacity;
+    }
+
+    // Instance method
+    // Enrolls a student if seats are available
+    void enrollStudent(String studentName) {
+
+        if (enrolledStudents < maxCapacity) {
+
+            enrolledStudents++;
+
+            System.out.println(
+                studentName + " enrolled in " + courseName
+            );
+        } 
+        
+        else {
+            System.out.println("Course capacity is full.");
+        }
+    }
+
+    // Instance method
+    // Removes a student from course
+    void unenrollStudent(String studentName) {
+
+        if (enrolledStudents > 0) {
+
+            enrolledStudents--;
+
+            System.out.println(
+                studentName + " unenrolled from " + courseName
+            );
+        } 
+        
+        else {
+            System.out.println("No students to remove.");
+        }
+    }
+
+    public static void main(String[] args) {
+
+        // Changing maximum capacity
+        Course.setMaxCapacity(2);
+
+        // Creating Course objects
+        Course javaCourse = new Course("Java");
+
+        // Enrolling students
+        javaCourse.enrollStudent("Rahul");
+        javaCourse.enrollStudent("Amit");
+
+        // Capacity full
+        javaCourse.enrollStudent("Priya");
+
+        // Removing student
+        javaCourse.unenrollStudent("Rahul");
+    }
+}
+```
+- Output:
+
+```text
+Rahul enrolled in Java
+Amit enrolled in Java
+Course capacity is full.
+Rahul unenrolled from Java
 ```
 
 ---
 
-## 326
+## Stack vs Heap Memory: 3.47
