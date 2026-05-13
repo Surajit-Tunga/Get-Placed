@@ -363,7 +363,7 @@ class Car {
 - Code block"{---}" determines the scope of a varible.
 - Variable inside a block cant be accesed outside it.
 - Block without static run each time when an instance is created.
-- Block with static run once when the class is loaded.
+- Block with static run only once when the class is loaded.
 - Example:
 
 ```java
@@ -621,4 +621,61 @@ Rahul unenrolled from Java
 
 ---
 
-## Stack vs Heap Memory: 3.47
+## Stack vs Heap Memory:
+
+![](../img/SHM.png)
+
+## Stack Memory
+
+- Stores local variables, method calls, and function execution data.
+- Memory is managed automatically in LIFO (Last In First Out) order.
+- Each method call creates a stack frame.
+- Faster access compared to heap memory.
+- Data exists only while the method is running.
+- Primitive variables are usually stored here.
+- Uses **static memory allocation**.
+
+- Example:
+```java
+void add() {
+    int x = 10;   // stored in stack
+}
+```
+
+## Heap Memory
+
+- Stores objects and instance variables.
+- Shared across all threads of the program.
+- Memory is allocated using `new`.
+- Slower than stack memory.
+- Objects remain until removed by Garbage Collector.
+- Uses **dynamic memory allocation**.
+
+- Example
+```java
+Car c = new Car();
+```
+
+- `c` reference → Stack
+- Actual `Car` object → Heap
+
+## Stack vs Heap
+
+| Stack Memory | Heap Memory |
+|---|---|
+| Stores local variables | Stores objects |
+| Static memory allocation | Dynamic memory allocation |
+| Faster | Slower |
+| Automatic management | Garbage Collector manages |
+| Temporary data | Long-lived data |
+
+## Important Points
+
+- Primitive variables → mostly Stack.
+- Objects → Heap.
+- Object reference variables → Stack.
+- `new` keyword creates memory in Heap.
+- Stack Overflow occurs due to deep recursion.
+- Heap Overflow causes `OutOfMemoryError`.
+
+--- 
