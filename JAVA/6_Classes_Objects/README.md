@@ -515,7 +515,7 @@ Book is successfully borrowed.
 
 ---
 
-## Q. Design a Course class.
+## Q. Design a Course class:
 
 - **Instance variables:** courseName, enrolledStudents.
 - **Static variable:** maxCapacity, the maximum number of students for any course.
@@ -625,7 +625,7 @@ Rahul unenrolled from Java
 
 ![](../img/SHM.png)
 
-## Stack Memory
+### Stack Memory:
 
 - Stores local variables, method calls, and function execution data.
 - Memory is managed automatically in LIFO (Last In First Out) order.
@@ -642,7 +642,7 @@ void add() {
 }
 ```
 
-## Heap Memory
+### Heap Memory:
 
 - Stores objects and instance variables.
 - Shared across all threads of the program.
@@ -659,7 +659,7 @@ Car c = new Car();
 - `c` reference → Stack
 - Actual `Car` object → Heap
 
-## Stack vs Heap
+### Stack vs Heap:
 
 | Stack Memory | Heap Memory |
 |---|---|
@@ -669,7 +669,7 @@ Car c = new Car();
 | Automatic management | Garbage Collector manages |
 | Temporary data | Long-lived data |
 
-## Important Points
+## Important Points:
 
 - Primitive variables → mostly Stack.
 - Objects → Heap.
@@ -679,3 +679,73 @@ Car c = new Car();
 - Heap Overflow causes `OutOfMemoryError`.
 
 --- 
+
+## Primitive and Reference Type:
+
+```text
+                        Data Types in Java
+                               │
+              ┌────────────────┴────────────────┐
+              │                                 │
+       Primitive Types                  Non-Primitive Types
+        (Intrinsic)                  (Derived / Reference type)
+              │                                 │
+       ┌──────┴──────┐            ┌────┬────┬────┬────┐────────┐
+       │             │            │    │    │    │    │        │ 
+     Numeric     Non-Numeric    Class Array Interface Object  String 
+       │             │
+     ┌─┴──┐      ┌───┴────┐
+     │    │      │        │
+    Int Float Character Boolean
+        
+```
+- Memory: Primitives store actual values; reference type store addresses to objects.
+- Primitives have specific default value like 0 or false; reference type default to null.
+- Acccess to primitives is generally faster.
+- Primitaive stored in the stack, and reference types are in heap.
+- Primitives are compared by value, reference types compared by reference.
+
+---
+
+## Variable Scope:
+
+```java
+class Demo {
+
+    //Global Variable
+    // Instance Variable
+    String name = "Surajit";
+
+    // Static Variable
+    static String college = "ABC College";
+
+    void show() {
+
+        // Local Variable
+        int age = 20;
+
+        System.out.println(name);     // Instance variable
+        System.out.println(college);  // Static variable
+        System.out.println(age);      // Local variable
+
+        // Block Scope
+        if (true) {
+            int x = 10;
+            System.out.println(x);
+        }
+
+        // System.out.println(x); // ❌ Error
+    }
+
+    public static void main(String[] args) {
+
+        Demo d = new Demo();
+        d.show();
+    }
+}
+```
+
+---
+
+## Garbage Collection & Finalize: 
+
