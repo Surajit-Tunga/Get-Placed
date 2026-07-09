@@ -23,7 +23,8 @@
 
 - [9. Sum of Digits](9_SumOfDigits/README.md)
 - [10. Reverse Digits](10_ReverseDigits/README.md)
-- [11. Prime Testing](11_PrimeTesting/README.md)
+
+<!-- - [11. Prime Testing](11_PrimeTesting/README.md)
 - [12. Check Power](12_CheckPower/README.md)
 - [13. Overlapping Rectangles](13_OverlappingRectangles/README.md)
 - [14. Factorial](14_Factorial/README.md)
@@ -69,6 +70,6 @@
 - [48. Rat and Poisoned](48_RatAndPoisoned/README.md)
 - [49. 8 Puzzle Problem](49_8Puzzle/README.md)
 - [50. Euler's Totient Function](50_EulersTotient/README.md)
-- [51. Josephus Problem](51_JosephusProblem/README.md)
+- [51. Josephus Problem](51_JosephusProblem/README.md) -->
 
 ---
