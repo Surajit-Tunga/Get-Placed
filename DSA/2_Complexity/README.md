@@ -501,7 +501,7 @@ public static int binarySearch(int[] arr, int key) {
 | Linear Search | O(n) | O(1) | Linear |
 | Binary Search | O(log n) | O(1) | Logarithmic |
 
-- ✅ **Binary Search is more optimized** because `O(log n)` grows much slower than `O(n)`.
+✅ **Binary Search is more optimized** because `O(log n)` grows much slower than `O(n)`.
 
 ---
 
@@ -552,11 +552,10 @@ If two programs produce the same correct output:
 | O(n) | O(log n) | ✅ O(log n) |
 | O(n) | O(1) | ✅ O(1) |
 
-```text
-**Notes**
-- Lower **Time Complexity** → Faster algorithm.
-- Lower **Space Complexity** → Less memory usage.
-- Better **Order of Growth** → Better scalability.
-- More optimized algorithms generally have a **lower order of growth**.
-```
+> **Notes**
+> - Lower **Time Complexity** → Faster algorithm.
+> - Lower **Space Complexity** → Uses less memory.
+> - Lower **Order of Growth** → Better scalability for larger inputs.
+> - In general, **a lower Order of Growth indicates a more optimized algorithm**.
+
 ---
