@@ -501,7 +501,7 @@ public static int binarySearch(int[] arr, int key) {
 | Linear Search | O(n) | O(1) | Linear |
 | Binary Search | O(log n) | O(1) | Logarithmic |
 
-- **Binary Search is more optimized** because `O(log n)` grows much slower than `O(n)`.
+- ✅ **Binary Search is more optimized** because `O(log n)` grows much slower than `O(n)`.
 
 ---
 
