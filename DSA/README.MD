@@ -8,7 +8,7 @@
 ## Fundamentals
 
 - [1. LOGIC BUILDING](1_LOGIC_BUILDING/README.md)
-- [2. TIME COMPLEXITY](2_TimeComplexity/README.md)
+- [2. COMPLEXITY ANALYSIS](2_Complexity/README.md)
 
 ---
 
