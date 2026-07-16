@@ -15,8 +15,11 @@
 
 ---
 
-## DSA
+## CS Fundamentals
 
-- [DSA](DSA/README.MD)
+- [1. DSA](DSA/README.MD)
+<!-- - [2. DBMS](DBMS/README.md)
+- [3. CN](CN/README.md) -->
+
 
 ---
