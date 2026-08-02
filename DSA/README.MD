@@ -12,37 +12,13 @@
 
 ---
 
-## Data Structures
+## Data Structures and Algorithms
 
-- [3. ARRAY & STRING](3_Array_String/README.md)
-<!-- 
-- [4. SEARCHING](4_Searching/README.md)
-- [5. SORTING](5_Sorting/README.md)
-- [6. BIT MANIPULATION](6_BitManipulation/README.md)
-- [7. HASHING](7_Hashing/README.md)
-- [8. TWO POINTER](8_TwoPointer/README.md)
-- [9. SLIDING WINDOW](9_SlidingWindow/README.md)
-- [10. PREFIX SUM](10_PrefixSum/README.md)
-- [11. LINKED LIST](11_LinkedList/README.md)
-- [12. STACK](12_Stack/README.md)
-- [13. QUEUE](13_Queue/README.md)
-- [14. DEQUE](14_Deque/README.md)
-- [15. BINARY TREE](15_BinaryTree/README.md)
-- [16. BINARY SEARCH TREE](16_BinarySearchTree/README.md)
-- [17. HEAP](17_Heap/README.md)
-- [18. GRAPH](18_Graph/README.md)
-- [19. TRIE](19_Trie/README.md)
+- [LEVEL 1 (BASIC & EASY)](LEVEL_1_BASIC_EASY/README.md)
+<!-- - [LEVEL 2 (MEDIUM)](LEVEL_2_MEDIUM/README.md)
+- [LEVEL 3 (HARD)](LEVEL_3_HARD/README.md)
+
+
+- [COMPANY WISE](COMPANY_WISE/README.md) -->
 
 ---
-
-## Algorithms
-
-- [20. BACKTRACKING](20_Backtracking/README.md)
-- [21. GREEDY](21_Greedy/README.md)
-- [22. DYNAMIC PROGRAMMING](22_DynamicProgramming/README.md)
-- [23. NUMBER THEORY](23_NumberTheory/README.md)
-- [24. STRING MATCHING](24_StringMatching/README.md)
-- [25. RANGE QUERY](25_RangeQuery/README.md)
-
----
- -->
