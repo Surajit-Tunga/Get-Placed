@@ -3,7 +3,7 @@
 - Data Structures manage how data is stored and accessed, while Algorithms focus on processing that data efficiently.
 - Examples of data structures are Arrays, Linked Lists, Trees, Graphs, Heaps, and Hash Tables. Examples of algorithms include Binary Search, Quick Sort, Merge Sort, Dijkstra's Algorithm, and Dynamic Programming.
 
-**Tutorial:** https://www.geeksforgeeks.org/dsa/dsa-tutorial-learn-data-structures-and-algorithms/
+**Tutorial:** [GeeksForGeeks](https://www.geeksforgeeks.org/dsa/dsa-tutorial-learn-data-structures-and-algorithms/)
 
 ## Fundamentals
 
