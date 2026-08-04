@@ -19,6 +19,6 @@
 - [LEVEL 3 (HARD)](LEVEL_3_HARD/README.md)
 
 
-- [COMPANY WISE](COMPANY_WISE/README.md) -->
+ -->
 
 ---

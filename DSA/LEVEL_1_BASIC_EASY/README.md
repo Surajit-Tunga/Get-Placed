@@ -1,12 +1,12 @@
 # LEVEL 1: Basic & Easy DSA
 
 - Fundamental DSA topics and easy-level coding problems.
-- Time: 4Weeks
+- Time: 8 Weeks
 
 ## Contents
 
 - [Array](1_Array/README.md)
-- [String](2_String/README.md)
+<!-- - [String](2_String/README.md)
 - [Searching](3_Searching/README.md)
 - [Sorting](4_Sorting/README.md)
 - [Bit Manipulation](5_Bit_Manipulation/README.md)
@@ -28,4 +28,4 @@
 - [Number Theory](21_Number_Theory/README.md)
 - [Trie](22_Trie/README.md)
 - [String Matching](23_String_Matching/README.md)
-- [Range Query](24_Range_Query/README.md)
+- [Range Query](24_Range_Query/README.md) -->

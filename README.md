@@ -21,5 +21,8 @@
 <!-- - [2. DBMS](DBMS/README.md)
 - [3. CN](CN/README.md) -->
 
+## Practice
 
+- [LeetCode](LEETCODE/README.md)
+<!-- - [COMPANY WISE](COMPANY_WISE/README.md) -->
 ---
