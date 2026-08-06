@@ -14,11 +14,7 @@
 
 ## Data Structures and Algorithms
 
-- [LEVEL 1 (BASIC & EASY)](LEVEL_1_BASIC_EASY/README.md)
-<!-- - [LEVEL 2 (MEDIUM)](LEVEL_2_MEDIUM/README.md)
-- [LEVEL 3 (HARD)](LEVEL_3_HARD/README.md)
+- [3. Array & Matrix](3_Array/README.md)
 
-
- -->
 
 ---

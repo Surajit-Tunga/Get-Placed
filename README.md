@@ -1,16 +1,11 @@
-# JAVA
+# Go Get a Job
 
-**Playlist:** [YouTube](https://youtube.com/playlist?list=PL78RhpUUKSweClRi_l05UgfE3053-zkRf&si=lL-9X97RYRBnC6Jg)
+- I created this repository while preparing for placements to keep all my notes and resources in one place. Hopefully, it helps you in your preparation too.
 
-## NOTES
+## Programming
 
-- [1. INTRODUCTION ](JAVA/1_INTRODUCTION/README.md)
-- [2. JAVA BASICS ](JAVA/2_JAVA_BASICS/README.md)
-- [3. DATA TYPE, VARIABLE & INPUTS ](JAVA/3_DTVI/README.md)
-- [4. OPERATORS IN JAVA](JAVA/4_OIENS/README.MD)
-- [5. While Loop, Methods & Arrays](JAVA/5_Loop/README.md)
-- [6. Classes & Objects](JAVA/6_Classes_Objects/README.md)
-
+- [1. JAVA](JAVA/README.MD)
+- [2. SQL](SQL/README.MD)
 
 
 ---
@@ -18,11 +13,9 @@
 ## CS Fundamentals
 
 - [1. DSA](DSA/README.MD)
-<!-- - [2. DBMS](DBMS/README.md)
-- [3. CN](CN/README.md) -->
 
 ## Practice
 
 - [LeetCode](LEETCODE/README.md)
-<!-- - [COMPANY WISE](COMPANY_WISE/README.md) -->
+
 ---
