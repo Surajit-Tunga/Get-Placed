@@ -4,8 +4,8 @@
 
 ## Programming
 
-- [1. JAVA](JAVA/README.MD)
-- [2. SQL](SQL/README.MD)
+- [1. JAVA](JAVA/README.md)
+- [2. SQL](SQL/README.md)
 
 
 ---
