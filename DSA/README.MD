@@ -7,15 +7,15 @@
 
 ## Fundamentals
 
-- [1. LOGIC BUILDING](1_LOGIC_BUILDING/README.md)
-- [2. COMPLEXITY ANALYSIS](2_Complexity/README.md)
+[1. LOGIC BUILDING](1_LOGIC_BUILDING/README.md)
+[2. COMPLEXITY ANALYSIS](2_Complexity/README.md)
 
 ---
 
 ## Data Structures and Algorithms
 
-- [3. Array & Matrix](3_Array/README.md)
+[3. Array & Matrix](3_Array/README.md)
 
 
-- [00. Coding Problems](00_Problems/README.md)
+[00. Coding Problems](00_Problems/README.md)
 ---
