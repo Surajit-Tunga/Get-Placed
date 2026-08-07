@@ -1,5 +1,5 @@
 # Coding Problems:
 
-- Topic wise problems:
+Topic wise problems:
 
 - [Array](1_Array/README.md)

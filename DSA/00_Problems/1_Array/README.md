@@ -1,6 +1,6 @@
 # Problems on Array:
 
-## Check if an Array is Sorted - Easy: 
+## 1_Check if an Array is Sorted - Easy: 
 
 - Given an array arr[], check if it is sorted in ascending order or not. Equal values are allowed in an array and two consecutive equal values are considered sorted.
 ```text
