@@ -165,7 +165,6 @@ AGE INT NOT NULL
 
 - It defines the type of values that can be stored in a column.
 
-
 | Data Type | Description | Example Usage |
 |-----------|-------------|---------------|
 | `CHAR` | Fixed-length string (0–255 characters). | `CHAR(50)` |
@@ -181,4 +180,24 @@ AGE INT NOT NULL
 | `DATE` | Stores dates in `YYYY-MM-DD` format (`1000-01-01` to `9999-12-31`). | `DATE` |
 | `YEAR` | Stores a 4-digit year (`1901` to `2155`). | `YEAR` |
 
+> **Note:** `CHAR(N)` always reserves space for **N characters**, regardless of the input length, whereas `VARCHAR(N)` can store up to **N characters** but uses space only for the actual input.
+> **Note:** `BIT(1)` stores **1 bit** (0 or 1), while `BIT(2)` stores **2 bits**, allowing values from `00` to `11` (0 to 3).
 
+
+> **Note:** `SIGNED` allows both **negative and positive** values (e.g., `-128` to `127` for `TINYINT`), whereas `UNSIGNED` allows **only positive** values (including `0`), increasing the maximum positive range (e.g., `0` to `255`).
+
+---
+
+## SQL Commands: 
+
+| Category | Full Form | Purpose | Commands |
+|----------|-----------|---------|----------|
+| **DDL** | Data Definition Language | Defines and modifies the database structure. | `CREATE`, `ALTER`, `DROP`, `TRUNCATE`, `RENAME` |
+| **DML** | Data Manipulation Language | Inserts, updates, and deletes data in tables. | `INSERT`, `UPDATE`, `DELETE` |
+| **DQL** | Data Query Language | Retrieves data from the database. | `SELECT` |
+| **DCL** | Data Control Language | Controls user access and permissions. | `GRANT`, `REVOKE` |
+| **TCL** | Transaction Control Language | Manages database transactions. | `COMMIT`, `ROLLBACK`, `SAVEPOINT` |
+
+---
+
+## 40
