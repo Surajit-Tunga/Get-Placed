@@ -145,3 +145,40 @@ CREATE TABLE TABLE_NAME (
     COL_NAME3 DATATYPE CONSTRAINT,
 )
 ```
+**Example: STUDENT Table in COLLAGE DB:** 
+
+```sql
+CREATE DATABASE COLLAGE;
+
+USE COLLAGE;
+
+CREATE TABLE STUDENT (
+ID INT PRIMARY KEY,
+NAME VARCHAR(50),
+AGE INT NOT NULL
+);
+```
+
+---
+
+## SQL Datatypes:
+
+- It defines the type of values that can be stored in a column.
+
+
+| Data Type | Description | Example Usage |
+|-----------|-------------|---------------|
+| `CHAR` | Fixed-length string (0–255 characters). | `CHAR(50)` |
+| `VARCHAR` | Variable-length string (0–255 characters). | `VARCHAR(50)` |
+| `BLOB` | Binary Large Object, stores binary data (up to 65,535 bytes). | `BLOB(1000)` |
+| `INT` | Integer value (`-2,147,483,648` to `2,147,483,647`). | `INT` |
+| `TINYINT` | Small integer (`-128` to `127`). | `TINYINT` |
+| `BIGINT` | Large integer (`-9,223,372,036,854,775,808` to `9,223,372,036,854,775,807`). | `BIGINT` |
+| `BIT` | Stores bit values (`1` to `64` bits). | `BIT(2)` |
+| `FLOAT` | Decimal number with precision up to **23 digits**. | `FLOAT` |
+| `DOUBLE` | Decimal number with precision from **24 to 53 digits**. | `DOUBLE` |
+| `BOOLEAN` | Stores boolean values (`0` or `1`, `FALSE` or `TRUE`). | `BOOLEAN` |
+| `DATE` | Stores dates in `YYYY-MM-DD` format (`1000-01-01` to `9999-12-31`). | `DATE` |
+| `YEAR` | Stores a 4-digit year (`1901` to `2155`). | `YEAR` |
+
+
