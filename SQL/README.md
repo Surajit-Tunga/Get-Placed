@@ -279,11 +279,11 @@ DESCRIBE Student;
 -- Rename the table
 RENAME TABLE Student TO Students;
 
--- Modify the table (Add a new column)
+-- Add a new column
 ALTER TABLE Students
 ADD Email VARCHAR(100);
 
--- Modify the table (Modify an existing column)
+-- Modify an existing column
 ALTER TABLE Students
 MODIFY Name VARCHAR(150);
 
@@ -294,10 +294,6 @@ RENAME COLUMN Name TO StudentName;
 -- Drop a column
 ALTER TABLE Students
 DROP COLUMN Email;
-
---add a column
-ALTER TABLE Students
-ADD COLUMN Email VARCHAR(100);
 
 -- Remove all records but keep the table structure
 TRUNCATE TABLE Students;
@@ -329,5 +325,44 @@ SELECT * FROM Students
 WHERE Age > 20;
 ```
 
+**DML Commands in Table:**
+
+```sql
+-- Select the database
+USE CollegeDB;
+
+-- Create the Students table
+CREATE TABLE Students (
+    StudentID INT PRIMARY KEY,
+    Name VARCHAR(100),
+    Age INT,
+    Department VARCHAR(50)
+);
+
+-- INSERT (Add Records)
+INSERT INTO Students (StudentID, Name, Age, Department)
+VALUES
+(101, 'Rahul', 20, 'CSE'),
+(102, 'Priya', 21, 'ECE'),
+(103, 'Aman', 19, 'IT');
+
+-- SELECT (Read Records)
+SELECT * FROM Students;
+
+-- UPDATE (Modify Records)
+UPDATE Students
+SET Age = 22
+WHERE StudentID = 102;
+
+-- DELETE (Remove Records)
+DELETE FROM Students
+WHERE StudentID = 103;
+
+-- Display the final table
+SELECT * FROM Students;
+```
+
 --- 
+
+51
 
