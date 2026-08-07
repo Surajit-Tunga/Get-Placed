@@ -287,9 +287,17 @@ ADD Email VARCHAR(100);
 ALTER TABLE Students
 MODIFY Name VARCHAR(150);
 
--- Modify the table (Drop a column)
+-- Rename a Column name
+ALTER TABLE Students
+RENAME COLUMN Name TO StudentName;
+
+-- Drop a column
 ALTER TABLE Students
 DROP COLUMN Email;
+
+--add a column
+ALTER TABLE Students
+ADD COLUMN Email VARCHAR(100);
 
 -- Remove all records but keep the table structure
 TRUNCATE TABLE Students;
@@ -297,8 +305,28 @@ TRUNCATE TABLE Students;
 -- Delete the table
 DROP TABLE Students;
 
+
+
 -- Delete the table only if it exists
 DROP TABLE IF EXISTS Students;
+```
+
+**Use of `SELECT` in Table:**
+
+```sql
+-- Display all records from the table
+SELECT * FROM Students;
+
+-- Display specific columns
+SELECT StudentID, Name FROM Students;
+
+-- Display students from a specific department
+SELECT * FROM Students
+WHERE Department = 'CSE';
+
+-- Display students older than 20
+SELECT * FROM Students
+WHERE Age > 20;
 ```
 
 --- 
