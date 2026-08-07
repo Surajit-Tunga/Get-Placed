@@ -201,4 +201,105 @@ AGE INT NOT NULL
 
 ---
 
-## 40
+## Database Commands:
+
+| Command | Description | Syntax / Example |
+|---------|-------------|------------------|
+| `CREATE DATABASE` | Creates a new database. | `CREATE DATABASE DB_NAME;` |
+| `CREATE DATABASE IF NOT EXISTS` | Creates a database only if it does not already exist. | `CREATE DATABASE IF NOT EXISTS DB_NAME;` |
+| `DROP DATABASE` | Deletes an existing database. | `DROP DATABASE DB_NAME;` |
+| `DROP DATABASE IF EXISTS` | Deletes the database only if it exists. | `DROP DATABASE IF EXISTS DB_NAME;` |
+| `SHOW DATABASES` | Displays all databases in the MySQL server. | `SHOW DATABASES;` |
+| `USE` | Selects a database to work with. | `USE DB_NAME;` |
+| `SHOW TABLES` | Displays all tables in the currently selected database. | `SHOW TABLES;` |
+
+**Example:**
+
+```sql
+-- Create a new database
+CREATE DATABASE CollegeDB;
+
+-- Create the database only if it does not exist
+CREATE DATABASE IF NOT EXISTS CollegeDB;
+
+-- Display all databases
+SHOW DATABASES;
+
+-- Select the database
+USE CollegeDB;
+
+-- Display all tables in the selected database
+SHOW TABLES;
+
+-- Delete the database
+DROP DATABASE CollegeDB;
+
+-- Delete the database only if it exists
+DROP DATABASE IF EXISTS CollegeDB;
+```
+
+---
+
+## Table Commands:
+
+
+| Command | Description | Syntax |
+|---------|-------------|--------|
+| `CREATE TABLE` | Creates a new table. | `CREATE TABLE TABLE_NAME ( COLUMN_NAME1 DATATYPE CONSTRAINT, COLUMN_NAME2 DATATYPE CONSTRAINT, ... );` |
+| `DROP TABLE` | Deletes an existing table. | `DROP TABLE TABLE_NAME;` |
+| `DROP TABLE IF EXISTS` | Deletes a table only if it exists. | `DROP TABLE IF EXISTS TABLE_NAME;` |
+| `TRUNCATE TABLE` | Removes all rows from a table while keeping its structure. | `TRUNCATE TABLE TABLE_NAME;` |
+| `ALTER TABLE` | Modifies the structure of an existing table. | `ALTER TABLE TABLE_NAME ADD / MODIFY / DROP COLUMN ...;` |
+| `RENAME TABLE` | Renames an existing table. | `RENAME TABLE OLD_TABLE_NAME TO NEW_TABLE_NAME;` |
+| `DESCRIBE` / `DESC` | Displays the structure of a table. | `DESC TABLE_NAME;` or `DESCRIBE TABLE_NAME;` |
+| `SHOW TABLES` | Displays all tables in the selected database. | `SHOW TABLES;` |
+
+**Example:**
+
+```sql
+-- Select the database
+USE CollegeDB;
+
+-- Create a new table
+CREATE TABLE Student (
+    StudentID INT PRIMARY KEY,
+    Name VARCHAR(100),
+    Age INT,
+    Department VARCHAR(50)
+);
+
+-- Display all tables
+SHOW TABLES;
+
+-- Display the structure of the table
+DESC Student;
+-- or
+DESCRIBE Student;
+
+-- Rename the table
+RENAME TABLE Student TO Students;
+
+-- Modify the table (Add a new column)
+ALTER TABLE Students
+ADD Email VARCHAR(100);
+
+-- Modify the table (Modify an existing column)
+ALTER TABLE Students
+MODIFY Name VARCHAR(150);
+
+-- Modify the table (Drop a column)
+ALTER TABLE Students
+DROP COLUMN Email;
+
+-- Remove all records but keep the table structure
+TRUNCATE TABLE Students;
+
+-- Delete the table
+DROP TABLE Students;
+
+-- Delete the table only if it exists
+DROP TABLE IF EXISTS Students;
+```
+
+--- 
+
