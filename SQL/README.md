@@ -181,6 +181,7 @@ AGE INT NOT NULL
 | `YEAR` | Stores a 4-digit year (`1901` to `2155`). | `YEAR` |
 
 > **Note:** `CHAR(N)` always reserves space for **N characters**, regardless of the input length, whereas `VARCHAR(N)` can store up to **N characters** but uses space only for the actual input.
+
 > **Note:** `BIT(1)` stores **1 bit** (0 or 1), while `BIT(2)` stores **2 bits**, allowing values from `00` to `11` (0 to 3).
 
 
