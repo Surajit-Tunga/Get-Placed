@@ -43,6 +43,16 @@ char arr[] = { 'a', 'b', 'c', 'd', 'e' };
 float arr[] = { 1.4f, 2.0f, 24f, 5.0f, 0.0f };
 ```
 
+### Accessing an Array: JAVA
+
+```java
+// 1D Array
+arrayName[index];
+
+// 2D Array
+arrayName[row][column];
+```
+
 ### Types of Array: 
 
 ```text
@@ -157,3 +167,314 @@ Row 2    |  7 |  8 |  9 |
 ```
 
 ---
+
+## Operations on Array:
+
+- Array operations are the basic actions performed on an array to store, access, modify, organize, and manage its elements.
+
+### Traversal in Array: 
+
+- To visit all elements of an array to perform some operations.
+- Types: Two type: 1. Linear Traversal (tarting from the first element and moving to the last element.) 2. Reverse Traversal (tarting from the last element and moving towards the first element.)
+
+**Example Program JAVA:**
+
+```java
+public class Main {
+    public static void main(String[] args){
+        int[] arr = {1,2,3,4,5};
+        int n = arr.length; //5
+
+        // To Print all Elements
+
+        for(int i=0; i<n; i++){
+            System.out.print(arr[i]);
+        }
+    }
+}
+```
+**Output:**
+
+```
+12345
+```
+**Complexity Analysis:**
+
+| Operation | Complexity |
+|-----------|------------|
+| **Time Complexity** | **O(n)** |
+| **Space Complexity** | **O(1)** |
+
+- The loop visits each of the `n` elements exactly **once**, so the time complexity is `O(n)`.
+- No extra data structure is used; only the loop variable `i` and `n` are stored, so the auxiliary space complexity is `O(1)`.
+
+**Using While Loop:**
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        int arr[] = {1,2,3,4,5};
+        int n = arr.length;
+        int i = 0;
+
+        while (i<n){
+            System.out.print(arr[i]);
+            i++;
+        }
+    }
+}
+```
+
+**Using ForEach Loop:**
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        int arr[] = {1,2,3,4,5};
+        int n = arr.length;
+        
+        for (int value: arr){
+            System.out.print(value);
+        }
+    }
+}
+```
+
+**Problem: Sum of Elements:**
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        int arr[] = {1,2,3,4,5};
+        int n = arr.length;
+        int sum =0;
+        
+        for(int i =0; i<n; i++) {
+            sum+= arr[i];
+        }
+        System.out.print("Sum of Elements:" + sum);
+    }
+}
+```
+**Output:**
+
+```text
+Sum of Elements:15
+```
+**Complexity Analysis:**
+
+| Complexity | Value |
+|------------|-------|
+| **Time Complexity** | **O(n)** |
+| **Space Complexity** | **O(1)** |
+
+- **Time Complexity:** `O(n)` because the loop traverses all `n` elements of the array exactly once.
+- **Space Complexity:** `O(1)` because only a constant amount of extra memory (`sum`, `n`, and `i`) is used.
+
+---
+
+### Insertions:
+
+- Adding a new element to the array.
+
+#### Insert Element at the Beginning of an Array:
+
+- Given an array of integers, the task is to insert an element at the beginning of the array.
+```text
+Input: arr[] = [10, 20, 30, 40], ele = 50
+Output: [50, 10, 20, 30, 40]
+```
+**Program:**
+
+```java
+public class Main{
+    public static void main(String[] args) {
+        int arr[] = {10,20,30,40,0};
+        int n = arr.length -1;
+        int ele = 50;
+
+        System.out.println("Before Insertion");
+        for (int i = 0; i<n; i++){
+            System.out.println(arr[i] + " ");
+        }
+
+        System.out.println("After Insertion");
+        // Step 1: Shift all elements to the right.
+        for (int i = n-1; i >= 0; i--) {
+            arr[i+1]=arr[i];
+        }
+        // Step 2: Insert new element.
+        arr[0] = ele;
+
+        for (int i = 0; i<arr.length; i++){
+            System.out.println(arr[i] + " ");
+        }
+
+    }
+}
+```
+
+**Output:**
+
+```text 
+Before Insertion
+10 
+20 
+30 
+40 
+After Insertion
+50 
+10 
+20 
+30 
+40 
+```
+
+**Complexity Analysis:**
+
+| Operation | Complexity |
+|-----------|------------|
+| **Time Complexity** | **O(n)** |
+| **Space Complexity** | **O(1)** |
+
+- **Time Complexity:** `O(n)`
+  - Printing the array before insertion takes **O(n)**.
+  - Shifting all elements to the right takes **O(n)**.
+  - Printing the array after insertion takes **O(n)**.
+  - Therefore, the total time complexity is **O(n + n + n) = O(3n) = O(n)**.
+
+- **Space Complexity:** `O(1)`
+  - Only a constant amount of extra memory (`n` and loop variable `i`) is used.
+  - No additional array or data structure is created.
+
+---
+
+#### Insert Element at a Given Position in an Array:
+
+- Given an array of integers, the task is to insert an element at a given position in the array.
+```text
+Input: arr[] = [10, 20, 30, 40], pos = 2, ele = 50
+Output: [10, 50, 20, 30, 40]
+```
+
+**Program:**
+
+```java
+public class Main{
+    public static void main(String[] args) {
+        int arr[] = {10,20,30,40,0};
+        int n = arr.length -1;
+        int pos = 2;
+        int index = pos-1;
+        int ele = 50;
+
+        System.out.println("Before Insertion");
+        for (int i = 0; i<n; i++){
+            System.out.println(arr[i] + " ");
+        }
+
+        System.out.println("After Insertion");
+        // Step 1: Shift all elements to the right.
+        for (int i = n-1; i >= index; i--) {
+            arr[i+1]=arr[i];
+        }
+        // Step 2: Insert new element.
+        arr[index] = ele;
+
+        for (int i = 0; i<arr.length; i++){
+            System.out.println(arr[i] + " ");
+        }
+
+    }
+}
+```
+
+**Output:**
+
+```text
+Before Insertion
+10 
+20 
+30 
+40  
+After Insertion
+10 
+50 
+20 
+30 
+40  
+```
+
+**Complexity Analysis:**
+
+| Operation | Complexity |
+|-----------|------------|
+| **Time Complexity** | **O(n)** |
+| **Space Complexity** | **O(1)** |
+
+---
+
+#### Insert Element at the End of an Array:
+
+- Given an array of integers, the task is to insert an element at the end of the array.
+```text
+Input: arr[] = [10, 20, 30, 40], ele = 50
+Output: [10, 20, 30, 40, 50]
+```
+
+**Program:**
+
+```java
+public class Main{
+    public static void main(String[] args) {
+        int arr[] = {10,20,30,40,0};
+        int n = arr.length -1;
+        int ele = 50;
+       
+        System.out.println("Before Insertion");
+        for (int i = 0; i<n; i++){
+            System.out.println(arr[i] + " ");
+        }
+
+        System.out.println("After Insertion");
+
+        arr[n] = ele;
+
+        for (int i = 0; i<arr.length; i++){
+            System.out.println(arr[i] + " ");
+        }
+
+    }
+}
+```
+
+**Output:**
+
+```text
+Before Insertion
+10 
+20 
+30 
+40 
+After Insertion
+10 
+20 
+30 
+40 
+50
+```
+
+**Complexity Analysis:**
+
+| Operation | Complexity |
+|-----------|------------|
+| **Time Complexity** | **O(n)** |
+| **Space Complexity** | **O(1)** |
+
+---
+
+### Deletion:
+
+- Deleting an element to the array.
+
+####
