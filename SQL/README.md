@@ -55,12 +55,93 @@
 
 **Step 3:** Select **Full** setup type.
 
-**Step 4:** Click **Execute** ×2 to download and install the required components.
+**Step 4:** Click **Next** then **Execute** ×2 to download and install the required components.
 
 **Step 5:** Click **Next** ×4.
 
-**Step 6:** Create a **root password**, then click **Next**.
+**Step 6:** Create a **root password**. 
 
-**Step 7:** Click **Execute**, then **Next**, and finally **Finish**.
+**Step 7:**  then click **Next** x3.
+
+**Step 8:** Click **Execute**, then **Next**, and  **Finish**.
+
+**Setp 9:** Connect to server: Give pass word next-> execute->Finish.
+
+**Step 10:** Finaly Next and Finsish.
+
+**Step 11:** Open MySQL Workbench, click on the "+" icon and create new connection.  Now click on that connection to wirte MySQL codes.
 
 ---
+
+## Database Structure:
+
+- In MySQL or RDBMS data is stored in form of table (one or multiple).
+
+- A **Table** is the basic unit of a relational database. It stores related data in the form of **rows** and **columns**.
+
+### Example: `Students` Table
+
+| StudentID | Name   | Age | Department |
+|-----------|--------|-----|------------|
+| 101       | Rahul  | 20  | CSE        |
+| 102       | Priya  | 21  | ECE        |
+| 103       | Aman   | 19  | IT         |
+
+### Components of a Table
+
+#### 1. Column (Field / Attribute)
+- A **Column** represents a specific property of the data.
+- Each column stores one type of information.
+
+**Example:** `StudentID`, `Name`, `Age`, `Department`
+
+#### 2. Row (Record / Tuple)
+- A **Row** represents one complete record in the table.
+
+**Example:**
+
+| StudentID | Name  | Age | Department |
+|-----------|-------|-----|------------|
+| 101       | Rahul | 20  | CSE        |
+
+#### 3. Cell
+- A **Cell** is the intersection of a row and a column.
+- It stores a single value.
+
+**Examples:**
+- `Rahul` → Cell in the **Name** column.
+- `20` → Cell in the **Age** column.
+
+---
+
+## Creating our First Database:
+
+- Open connection in MySQL workbench write code in the "query" tab. 
+
+**To create a database:**
+
+```sql
+CREATE DATABASE DB_NAME;
+```
+**To delete a database:**
+
+```sql
+DROP DATABASE DB_NAME;
+```
+
+### Create a Table:
+
+**Select the database first:**
+
+```sql
+USE DB_NAME;
+```
+**Syntax to Create a Table:**
+
+```sql
+CREATE TABLE TABLE_NAME (
+    COL_NAME1 DATATYPE CONSTRAINT,
+    COL_NAME2 DATATYPE CONSTRAINT,
+    COL_NAME3 DATATYPE CONSTRAINT,
+)
+```
