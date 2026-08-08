@@ -362,7 +362,203 @@ WHERE StudentID = 103;
 SELECT * FROM Students;
 ```
 
+### Practice Question_1:
+
+```text
+Create a databse for your company named XYZ.
+1. Create a table to store employee info(id,name,salary).
+2. Add data into DB
+3. Select an view all table data
+```
+**Solution:**
+```sql
+-- Create DB XYZ and use it.
+CREATE DATABASE IF NOT EXISTS XYZ;
+
+USE XYZ;
+
+-- Create a table to store employee info(id,name,salary).
+CREATE TABLE EMPLOYEE (
+ID INT PRIMARY KEY,
+NAME VARCHAR(50),
+SALARY INT NOT NULL
+);
+
+-- Add data into DB
+INSERT INTO EMPLOYEE (ID, NAME, SALARY) VALUES
+(1,"SURAJIT", 100000),
+(2,"SURAJ", 100000),
+(3,"JIT", 100000);
+
+-- Select and view all table data
+SELECT * FROM EMPLOYEE;
+```
+> Table, Database names are case sensitive. 
+
 --- 
 
-51
+## Keys:
 
+- Keys in SQL are attributes/columns used to uniquely identify records and establish relationships between tables.
+
+### Primary Key:
+
+- It is a unique id.
+- It is a column or set of columns in a table that uniquely identifies each row.
+- There can be only 1 Primary key and it should not be null.
+- Eg. `Employee_id`, `Roll_Num`.
+
+**Example:**
+
+```sql
+CREATE TABLE Employee (
+    Employee_ID INT PRIMARY KEY,
+    Name VARCHAR(50),
+    Department VARCHAR(50),
+    Salary INT
+);
+
+INSERT INTO Employee (Employee_ID, Name, Department, Salary)
+VALUES
+(101, 'Rahul', 'IT', 50000),
+(102, 'Amit', 'HR', 45000),
+(103, 'Priya', 'Finance', 55000);
+```
+
+| Employee_ID (Primary Key) | Name  | Department | Salary |
+| ------------------------: | ----- | ---------- | -----: |
+|                       101 | Rahul | IT         |  50000 |
+|                       102 | Amit  | HR         |  45000 |
+|                       103 | Priya | Finance    |  55000 |
+
+> Here, `Employee_ID` is the **Primary Key** because every employee has a unique `Employee_ID`, and it cannot be `NULL`.
+
+For example, this is **not allowed**:
+
+```sql
+INSERT INTO Employee (Employee_ID, Name, Department, Salary)
+VALUES (101, 'John', 'IT', 40000);
+```
+
+Because `Employee_ID = 101` already exists.
+
+
+### Foreign Key:
+
+- A foreign key is a coloumn or a set of column in a table that refers to the primary key of another table.
+- There can be multiple Foreign Keys.
+- Foreign Keys can have duplicate & null values.
+
+**Example:**
+
+Here, `Department_ID` in the `Employee` table is a **Foreign Key** that refers to `Department_ID` (Primary Key) in the `Department` table.
+
+```sql
+CREATE TABLE Department (
+    Department_ID INT PRIMARY KEY,
+    Department_Name VARCHAR(50)
+);
+
+CREATE TABLE Employee (
+    Employee_ID INT PRIMARY KEY,
+    Name VARCHAR(50),
+    Department_ID INT,
+    FOREIGN KEY (Department_ID) REFERENCES Department(Department_ID)
+);
+```
+
+Department Table:
+
+| Department_ID (Primary Key) | Department_Name |
+| --------------------------: | --------------- |
+|                           1 | IT              |
+|                           2 | HR              |
+|                           3 | Finance         |
+
+Employee Table:
+
+| Employee_ID (Primary Key) | Name  | Department_ID (Foreign Key) |
+| ------------------------: | ----- | --------------------------: |
+|                       101 | Rahul |                           1 |
+|                       102 | Amit  |                           1 |
+|                       103 | Priya |                           2 |
+|                       104 | John  |                        NULL |
+
+Here, `Department_ID` in the **Employee** table is a Foreign Key.
+
+* `1` appears multiple times → **Duplicate values are allowed**.
+* `NULL` is allowed → **unless `NOT NULL` is specified**.
+* `Department_ID = 1` refers to the `IT` department in the `Department` table.
+* `Department_ID = 2` refers to the `HR` department.
+
+The Foreign Key also prevents inserting a value that does not exist in the referenced table:
+
+```sql
+INSERT INTO Employee (Employee_ID, Name, Department_ID)
+VALUES (105, 'Sam', 10);
+```
+
+❌ This will fail because `Department_ID = 10` does not exist in the `Department` table.
+
+> **Note:** There are several other types of keys in SQL, such as **Unique Key, Candidate Key, Super Key, Alternate Key, and Composite Key**.
+
+
+### Practice Question_2:
+
+```text
+Continue after Practice set 1.
+1. Add a new table JOB_Profile with JOB_ID and JOB_NAME.
+2. JOB_ID is Primary key Here and Make it Foreign Key in the Previous Employee Table.
+3. Update Null Values in the Employee Table.
+```
+**Solution:**
+
+```sql
+-- Create DB XYZ and use it.
+CREATE DATABASE IF NOT EXISTS XYZ;
+
+USE XYZ;
+
+-- Create a table to store employee info(id,name,salary).
+CREATE TABLE EMPLOYEE (
+ID INT PRIMARY KEY,
+NAME VARCHAR(50),
+SALARY INT NOT NULL
+);
+
+-- Add data into DB
+INSERT INTO EMPLOYEE (ID, NAME, SALARY) VALUES
+(1,"SURAJIT", 100000),
+(2,"SURAJ", 100000),
+(3,"JIT", 100000);
+
+-- Select and view all table data
+SELECT * FROM EMPLOYEE;
+
+USE XYZ;
+
+-- Create a table to store job profile info(job_id,job_title).
+CREATE TABLE JOB_PROFILE (
+JOB_ID INT PRIMARY KEY,
+JOB_TITLE VARCHAR(50)
+);
+
+-- Add data into JOB_PROFILE table.
+INSERT INTO JOB_PROFILE (JOB_ID, JOB_TITLE) VALUES (1, "CEO"), (2,"CTO"), (3, "INTERN");
+
+SELECT * FROM JOB_PROFILE;
+
+-- Add a foreign key constraint to the EMPLOYEE table.
+ALTER TABLE EMPLOYEE 
+ADD JOB_ID INT,
+ADD FOREIGN KEY (JOB_ID) REFERENCES JOB_PROFILE(JOB_ID);
+
+-- Update the EMPLOYEE table to set the JOB_ID for each employee.
+UPDATE EMPLOYEE SET JOB_ID = 1 WHERE ID = 1;
+UPDATE EMPLOYEE SET JOB_ID = 2 WHERE ID = 2;
+UPDATE EMPLOYEE SET JOB_ID = 3 WHERE ID = 3;
+
+SELECT * FROM EMPLOYEE; 
+```
+
+---
