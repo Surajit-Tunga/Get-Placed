@@ -17,5 +17,5 @@
 - [3. Array & Matrix](3_Array/README.md)
 
 
-- [00. Coding Problems](00_Problems/README.md)
+- [Coding Problems](00_Problems/README.md)
 ---

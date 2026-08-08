@@ -477,4 +477,4 @@ After Insertion
 
 - Deleting an element to the array.
 
-#### 
+#### Delete an Element from the Beginning of an Array:
