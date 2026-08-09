@@ -13,9 +13,18 @@
 ## CS Fundamentals
 
 - [1. DSA](DSA/README.MD)
+- DBMS
+- System Design 
 
 ## Practice
 
-- [LeetCode](LEETCODE/README.md)
+- Problems on DSA & JAVA
+- Problems on Database
+- Interview Qsn
+
+## Other Links
+
+- Backend Development (Nodejs)
+- Java full stack Springboot 
 
 ---
