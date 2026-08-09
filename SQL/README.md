@@ -442,6 +442,16 @@ VALUES (101, 'John', 'IT', 40000);
 
 Because `Employee_ID = 101` already exists.
 
+**Example with two column combined as PK:**
+
+```SQL
+CREATE TABLE ENROLLMENT (
+    STUDENT_ID INT,
+    COURSE_ID INT,
+    MARKS INT,
+    PRIMARY KEY (STUDENT_ID, COURSE_ID)
+);
+```
 
 ### Foreign Key:
 
@@ -562,3 +572,103 @@ SELECT * FROM EMPLOYEE;
 ```
 
 ---
+
+## Constraints in SQL:
+
+- SQL constraints are used to specify rules for dara in a table.
+
+| Constraint       | Description                                               | Example                                          |
+| ---------------- | --------------------------------------------------------- | ------------------------------------------------ |
+| `NOT NULL`       | Prevents `NULL` values                                    | `Name VARCHAR(50) NOT NULL`                      |
+| `UNIQUE`         | Ensures all values are unique                             | `Email VARCHAR(100) UNIQUE`                      |
+| `PRIMARY KEY`    | Uniquely identifies each row                              | `ID INT PRIMARY KEY`                             |
+| `FOREIGN KEY`    | Links two tables and maintains referential integrity      | `FOREIGN KEY (DeptID) REFERENCES Department(ID)` |
+| `CHECK`          | Ensures values satisfy a condition                        | `Age INT CHECK (Age >= 18)`                      |
+| `DEFAULT`        | Assigns a value when none is provided                     | `Country VARCHAR(50) DEFAULT 'India'`            |
+| `AUTO_INCREMENT` | Automatically generates sequential numeric values (MySQL) | `ID INT AUTO_INCREMENT`                          |
+
+### Practice Question_3:
+
+```text
+Create a database named `CollegeDB` and create the following tables.
+
+1. STUDENT Table
+
+Create a `STUDENT` table with:
+
+- `StudentID` → automatically generated and primary key
+- `Name` → cannot be `NULL`
+- `Age` → must be `18` or above
+- `Country` → default value should be `'India'`
+- `DepartmentID` → foreign key referencing `DEPARTMENT`
+
+2. DEPARTMENT Table
+
+Create a `DEPARTMENT` table with:
+
+- `DepartmentID` → primary key
+- `DepartmentName` → cannot be `NULL` and must be unique
+
+3. Insert Data
+
+Insert at least **5 students** belonging to different departments.
+
+Make sure:
+
+- At least one student uses the default `Country`.
+- `StudentID` is generated automatically.
+
+```
+
+**Solution:**
+
+```sql
+--  CREATE & USE DATABASE COLLAGEDB
+CREATE DATABASE IF NOT EXISTS COLLAGEDB;
+USE COLLAGEDB;
+
+-- CREATE DEPT TABLE
+
+CREATE TABLE DEPERTMENT (
+ID INT PRIMARY KEY,
+NAME VARCHAR(50) NOT NULL
+);
+
+-- CREATE STUDENT TABLE
+CREATE TABLE STUDENT (
+STUDENT_ID INT AUTO_INCREMENT PRIMARY KEY,
+NAME VARCHAR(50) NOT NULL,
+AGE INT CHECK(AGE>=18),
+COUNTRY VARCHAR(50) DEFAULT 'INDIA',
+DEPT_ID INT,
+FOREIGN KEY (DEPT_ID) REFERENCES DEPERTMENT (ID)
+);
+
+-- INSERT DATA
+INSERT INTO DEPERTMENT (ID, NAME) VALUES 
+(1, 'ECE'), (2, 'CSE'), (3, 'EE');
+INSERT INTO STUDENT (NAME, AGE, COUNTRY, DEPT_ID) VALUES 
+('Rahul', 20, 'INDIA', 1),
+('Priya', 21, 'INDIA', 2),
+('Amit', 19, 'INDIA', 3),
+('Sneha', 22, 'INDIA', 1),
+('Arjun', 20, 'INDIA', 2),
+('Ananya', 19, 'INDIA', 3),
+('Rohan', 23, 'INDIA', 1),
+('Kavya', 21, 'INDIA', 2),
+('Vikram', 22, 'INDIA', 3),
+('Neha', 20, 'INDIA', 1);
+
+-- DEFAULT INDIA
+
+INSERT INTO STUDENT (NAME, AGE, DEPT_ID) VALUES 
+('SURAJIT', 21, 1);
+
+-- VIEW ALL DATA
+
+SELECT * FROM STUDENT;
+SELECT * FROM DEPERTMENT;
+```
+---
+
+## 
