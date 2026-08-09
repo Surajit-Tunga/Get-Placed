@@ -254,6 +254,8 @@ DROP DATABASE IF EXISTS CollegeDB;
 | `DESCRIBE` / `DESC` | Displays the structure of a table. | `DESC TABLE_NAME;` or `DESCRIBE TABLE_NAME;` |
 | `SHOW TABLES` | Displays all tables in the selected database. | `SHOW TABLES;` |
 
+> Alter is used to make changes in the Schema.
+
 **Example:**
 
 ```sql
@@ -512,6 +514,29 @@ VALUES (105, 'Sam', 10);
 
 > **Note:** There are several other types of keys in SQL, such as **Unique Key, Candidate Key, Super Key, Alternate Key, and Composite Key**.
 
+#### Cascading on FK:
+
+- `On Delete Cascade` When we create a FK with this option, it deletes the referencing rows in the child table when referenced is Deleted in the parent table which has a primary key.
+- `On Update Cascade` When we create a FK with this option, it Updates the referencing rows in the child table when referenced is Updated in the parent table which has a primary key.
+
+Example:
+
+```sql
+CREATE TABLE DEPARTMENT (
+    ID INT PRIMARY KEY,
+    NAME VARCHAR(50)
+);
+
+CREATE TABLE STUDENT (
+    ID INT PRIMARY KEY,
+    NAME VARCHAR(50),
+    DEPT_ID INT,
+    FOREIGN KEY (DEPT_ID)
+        REFERENCES DEPARTMENT(ID)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE
+);
+```
 
 ### Practice Question_2:
 
@@ -713,6 +738,195 @@ SELECT * FROM DEPERTMENT;
 | `MIN()` | Aggregate Function | Finds the minimum value | `SELECT MIN(AGE) FROM STUDENT;` |
 | `MAX()` | Aggregate Function | Finds the maximum value | `SELECT MAX(AGE) FROM STUDENT;` |
 
+**General Order to Write:**
+
+```text
+`SELECT` → `FROM` → `WHERE` → `GROUP BY` → `HAVING` → `ORDER BY` → `LIMIT` → `OFFSET`
+```
+Example:
+
+```sql
+SELECT DEPT_ID, AVG(AGE) AS AVG_AGE
+FROM STUDENT
+WHERE AGE >= 18
+GROUP BY DEPT_ID
+HAVING AVG(AGE) > 20
+ORDER BY AVG_AGE DESC
+LIMIT 3
+OFFSET 1;
+```
 --- 
 
-## 
+## Joins in SQL:
+
+- Join is used to combine rows from two or more table based on a related column between them. 
+
+### Types of Join:
+
+| JOIN Type | Description |
+|---|---|
+| `INNER JOIN` | Returns only the rows that have matching values in both tables. |
+| `LEFT JOIN` | Returns all rows from the left table and matching rows from the right table. |
+| `RIGHT JOIN` | Returns all rows from the right table and matching rows from the left table. |
+| `FULL OUTER JOIN` | Returns all rows from both tables, whether they match or not. |
+| `CROSS JOIN` | Returns every possible combination of rows from both tables. |
+| `SELF JOIN` | Joins a table with itself. |
+
+**Example**
+
+```sql
+-- Crate two tables
+
+CREATE TABLE STUDENT (
+    ID INT PRIMARY KEY,
+    NAME VARCHAR(50),
+    DEPT_ID INT
+);
+
+CREATE TABLE DEPARTMENT (
+    ID INT PRIMARY KEY,
+    NAME VARCHAR(50)
+);
+
+INSERT INTO STUDENT VALUES
+(1, 'Rahul', 1),
+(2, 'Priya', 2),
+(3, 'Amit', 1),
+(4, 'Rohan', 3);
+
+INSERT INTO DEPARTMENT VALUES
+(1, 'CSE'),
+(2, 'ECE'),
+(4, 'ME');
+```
+Tables Before JOIN: 
+
+```text
+STUDENT
+
+ID	NAME	DEPT_ID
+1	Rahul	1
+2	Priya	2
+3	Amit	1
+4	Rohan	3
+
+DEPARTMENT
+
+ID	NAME
+1	CSE
+2	ECE
+4	ME
+```
+
+1. **Inner join:**
+```sql
+SELECT STUDENT.NAME, DEPARTMENT.NAME AS DEPARTMENT
+FROM STUDENT
+INNER JOIN DEPARTMENT
+ON STUDENT.DEPT_ID = DEPARTMENT.ID;
+```
+Output:
+
+| STUDENT | DEPARTMENT |
+| ------- | ---------- |
+| Rahul   | CSE        |
+| Priya   | ECE        |
+| Amit    | CSE        |
+
+2. **Left Join:**
+```sql
+SELECT STUDENT.NAME, DEPARTMENT.NAME AS DEPARTMENT
+FROM STUDENT
+LEFT JOIN DEPARTMENT
+ON STUDENT.DEPT_ID = DEPARTMENT.ID;
+```
+Output:
+
+| STUDENT | DEPARTMENT |
+| ------- | ---------- |
+| Rahul   | CSE        |
+| Priya   | ECE        |
+| Amit    | CSE        |
+| Rohan   | NULL       |
+
+3. **Right Join:**
+```sql
+SELECT STUDENT.NAME, DEPARTMENT.NAME AS DEPARTMENT
+FROM STUDENT
+RIGHT JOIN DEPARTMENT
+ON STUDENT.DEPT_ID = DEPARTMENT.ID;
+```
+Output:
+
+| STUDENT | DEPARTMENT |
+| ------- | ---------- |
+| Rahul   | CSE        |
+| Priya   | ECE        |
+| Amit    | CSE        |
+| NULL    | ME         |
+
+4. **FULL OUTER JOIN:**
+- MySQL does not directly support `FULL OUTER JOIN`. Use `LEFT JOIN` + `RIGHT JOIN` with `UNION`.
+
+```sql
+SELECT STUDENT.NAME, DEPARTMENT.NAME AS DEPARTMENT
+FROM STUDENT
+LEFT JOIN DEPARTMENT
+ON STUDENT.DEPT_ID = DEPARTMENT.ID
+
+UNION
+
+SELECT STUDENT.NAME, DEPARTMENT.NAME AS DEPARTMENT
+FROM STUDENT
+RIGHT JOIN DEPARTMENT
+ON STUDENT.DEPT_ID = DEPARTMENT.ID;
+```
+Output:
+
+| STUDENT | DEPARTMENT |
+| ------- | ---------- |
+| Rahul   | CSE        |
+| Priya   | ECE        |
+| Amit    | CSE        |
+| Rohan   | NULL       |
+| NULL    | ME         |
+
+5. **Cross Join:**
+```sql
+SELECT STUDENT.NAME, DEPARTMENT.NAME AS DEPARTMENT
+FROM STUDENT
+CROSS JOIN DEPARTMENT;
+```
+Output:
+
+| STUDENT | DEPARTMENT |
+| ------- | ---------- |
+| Rahul   | CSE        |
+| Rahul   | ECE        |
+| Rahul   | ME         |
+| Priya   | CSE        |
+| Priya   | ECE        |
+| Priya   | ME         |
+| Amit    | CSE        |
+| Amit    | ECE        |
+| Amit    | ME         |
+| Rohan   | CSE        |
+| Rohan   | ECE        |
+| Rohan   | ME         |
+
+6. **Self Join:**
+```sql
+SELECT A.NAME AS STUDENT_1, B.NAME AS STUDENT_2
+FROM STUDENT A
+JOIN STUDENT B
+ON A.DEPT_ID = B.DEPT_ID
+AND A.ID < B.ID;
+```
+Output:
+
+| STUDENT_1 | STUDENT_2 |
+| --------- | --------- |
+| Rahul     | Amit      |
+
+---
+
