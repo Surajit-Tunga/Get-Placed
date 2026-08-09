@@ -928,5 +928,84 @@ Output:
 | --------- | --------- |
 | Rahul     | Amit      |
 
+### UNION:
+
+- `UNION` is used to combine the reult-set of of two or more `SELECT` statements.
+
+**Syntex:**
+```sql
+SELECT COL FROM TABLE_A
+UNION
+SELECT COL FROM TABLE_B;
+```
 ---
 
+## SQL Sub Queries:
+
+- A Subquery or Inner query or a Nested query is a query within another SQL query
+
+### Example:
+
+**Q. Find students whose age is greater than the average age of all students.**
+
+```sql
+SELECT NAME, AGE
+FROM STUDENT
+WHERE AGE > (
+    SELECT AVG(AGE)
+    FROM STUDENT
+);
+```
+
+1. Inner query → SELECT AVG(AGE) FROM STUDENT
+                 ↓
+2. Gets the average age
+                 ↓
+3. Outer query → finds students whose AGE is greater than that average
+
+**Q. Find max marks of their department ECE.**
+
+```sql
+SELECT MAX(MARKS) FROM (
+SELECT * FROM STUDENT WHERE DEPT = "ECE") AS TEMP;
+```
+> A subquery used in FROM must have an alias such as AS `TEMP`.
+
+---
+
+## MySQL Views:
+
+- A view is a virtual table based on the result-set of an statement.
+- Helps in access management.
+
+```sql
+CREATE VIEW VIEW1 AS SELECT ID, NAME FROM STUDENT;
+
+SELECT * FROM VIEW1;
+```
+
+---
+
+<!-- ## After It — To Do:
+
+- [ ] ACID Properties
+- [ ] Transactions (`COMMIT`, `ROLLBACK`, `SAVEPOINT`)
+- [ ] Normalization (1NF, 2NF, 3NF, BCNF)
+- [ ] Functional Dependency
+- [ ] ER Model & ER Diagrams
+- [ ] Indexing
+- [ ] Concurrency Control
+- [ ] Serializability
+- [ ] Deadlocks
+- [ ] `CASE`
+- [ ] `EXISTS` & Correlated Subqueries
+- [ ] CTE (`WITH`)
+- [ ] Window Functions
+- [ ] String Functions
+- [ ] Date/Time Functions
+- [ ] Numeric Functions
+- [ ] Query Optimization & `EXPLAIN`
+- [ ] Stored Procedures
+- [ ] Triggers
+- [ ] Database Security & Privileges
+- [ ] Distributed Databases — Basics -->
