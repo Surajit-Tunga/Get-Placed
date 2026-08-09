@@ -671,4 +671,48 @@ SELECT * FROM DEPERTMENT;
 ```
 ---
 
+## SELECT Statement & Clauses:
+
+| Syntax / Term | Type | Description | Example |
+|---|---|---|---|
+| `SELECT` | Clause | Retrieves data from a table | `SELECT NAME FROM STUDENT;` |
+| `*` | Operator / Wildcard | Selects all columns | `SELECT * FROM STUDENT;` |
+| `FROM` | Clause | Specifies the table to retrieve data from | `SELECT * FROM STUDENT;` |
+| `DISTINCT` | Keyword | Removes duplicate values from the result | `SELECT DISTINCT DEPT_ID FROM STUDENT;` |
+| `AS` | Keyword / Alias | Gives a temporary alias to a column/table | `SELECT NAME AS STUDENT_NAME FROM STUDENT;` |
+| `WHERE` | Clause | Filters rows based on a condition | `SELECT * FROM STUDENT WHERE AGE > 20;` |
+| `AND` | Logical Operator | All conditions must be true | `WHERE AGE > 18 AND DEPT_ID = 1` |
+| `OR` | Logical Operator | At least one condition must be true | `WHERE DEPT_ID = 1 OR DEPT_ID = 2` |
+| `NOT` | Logical Operator | Reverses a condition | `WHERE NOT DEPT_ID = 1` |
+| `IN` | Comparison Operator | Matches any value in a list | `WHERE DEPT_ID IN (1, 2, 3)` |
+| `NOT IN` | Comparison Operator | Excludes values in a list | `WHERE DEPT_ID NOT IN (1, 2)` |
+| `BETWEEN` | Comparison Operator | Checks whether a value is within a range (inclusive) | `WHERE AGE BETWEEN 18 AND 25` |
+| `NOT BETWEEN` | Comparison Operator | Checks whether a value is outside a range | `WHERE AGE NOT BETWEEN 18 AND 25` |
+| `LIKE` | Pattern Matching Operator | Searches for a pattern | `WHERE NAME LIKE 'A%'` |
+| `NOT LIKE` | Pattern Matching Operator | Excludes a pattern | `WHERE NAME NOT LIKE 'A%'` |
+| `%` | Wildcard | Represents zero or more characters with `LIKE` | `LIKE 'A%'` |
+| `_` | Wildcard | Represents exactly one character with `LIKE` | `LIKE '_A%'` |
+| `IS NULL` | NULL Operator | Checks for `NULL` values | `WHERE COUNTRY IS NULL` |
+| `IS NOT NULL` | NULL Operator | Checks for non-`NULL` values | `WHERE COUNTRY IS NOT NULL` |
+| `=` | Comparison Operator | Checks equality | `WHERE AGE = 20` |
+| `!=` / `<>` | Comparison Operator | Checks inequality | `WHERE AGE != 20` |
+| `>` | Comparison Operator | Greater than | `WHERE AGE > 20` |
+| `<` | Comparison Operator | Less than | `WHERE AGE < 20` |
+| `>=` | Comparison Operator | Greater than or equal to | `WHERE AGE >= 20` |
+| `<=` | Comparison Operator | Less than or equal to | `WHERE AGE <= 20` |
+| `ORDER BY` | Clause | Sorts the result | `ORDER BY AGE` |
+| `ASC` | Keyword | Sorts in ascending order | `ORDER BY AGE ASC` |
+| `DESC` | Keyword | Sorts in descending order | `ORDER BY AGE DESC` |
+| `LIMIT` | Clause | Restricts the number of rows returned | `LIMIT 5` |
+| `OFFSET` | Clause | Skips a specified number of rows | `LIMIT 5 OFFSET 10` |
+| `GROUP BY` | Clause | Groups rows having the same values | `GROUP BY DEPT_ID` |
+| `HAVING` | Clause | Filters grouped results | `HAVING COUNT(*) > 2` |
+| `COUNT()` | Aggregate Function | Counts rows or non-NULL values | `SELECT COUNT(*) FROM STUDENT;` |
+| `SUM()` | Aggregate Function | Calculates the total | `SELECT SUM(MARKS) FROM STUDENT;` |
+| `AVG()` | Aggregate Function | Calculates the average | `SELECT AVG(AGE) FROM STUDENT;` |
+| `MIN()` | Aggregate Function | Finds the minimum value | `SELECT MIN(AGE) FROM STUDENT;` |
+| `MAX()` | Aggregate Function | Finds the maximum value | `SELECT MAX(AGE) FROM STUDENT;` |
+
+--- 
+
 ## 
