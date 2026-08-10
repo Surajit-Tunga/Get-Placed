@@ -13,7 +13,8 @@
 ## CS Fundamentals
 
 - [1. DSA](DSA/README.MD)
-- DBMS
+- [2. DBMS](DBMS/README.md)
+
 - System Design 
 
 ## Practice
