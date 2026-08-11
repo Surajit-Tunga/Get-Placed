@@ -98,7 +98,7 @@ arr[4] = 50;
 **2. Dynamic Array**
 
 - Size can **grow or shrink** during execution.
-- Internally allocates a larger array when capacity is full.
+- When the internal array becomes full, ArrayList creates a larger internal array and copies the existing elements into it.
 - Java provides `ArrayList` as a dynamic array.
 
 ```java
@@ -836,3 +836,142 @@ public class Main{
 }
 ```
 ---
+
+## ArrayList in Java:
+
+- ArrayList in Java is a resizable array provided in the java.util package. Unlike normal arrays, its size can grow or shrink dynamically as elements are added or removed.
+- Elements can be accessed using their indices, similar to arrays.
+- Duplicates are allowed.
+- Elements are stored in the order they are inserted.
+
+**Syntex for ArrayList:**
+```java
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        // Create an ArrayList:
+        ArrayList<Integer> a = new ArrayList<>();
+
+        //Adding Element
+
+        a.add(1);
+        a.add(2);
+
+        //Printing ArrayList
+      	System.out.println(a);
+    }
+}
+
+```
+**Initialize it with values:**
+```java
+ArrayList<Integer> a = new ArrayList<>(Arrays.asList(1, 2, 3, 4));
+```
+
+**Multiple data at once:**
+```java
+import java.util.List;
+//rest of code block
+a.addAll(List.of(1, 2, 3, 4));
+```
+### Operations of ArrayList:
+-  Demonstrates the basic operations of an `ArrayList`, including adding, removing, and updating elements.
+
+```java
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+
+        // Create an ArrayList
+        ArrayList<String> list = new ArrayList<>();
+
+        // 1. Add elements
+        list.add("Apple");
+        list.add("Banana");
+
+        System.out.println("Original List: " + list);
+
+        // Add element at a specific index
+        list.add(1, "Mango");
+
+        System.out.println("After adding at index 1: " + list);
+
+        // 2. Remove element using index
+        list.remove(0);
+
+        System.out.println("After removing index 0: " + list);
+
+        // Remove element using value
+        list.remove("Banana");
+
+        System.out.println("After removing Banana: " + list);
+
+        // 3. Update element using index
+        list.set(0, "Orange");
+
+        System.out.println("After updating index 0: " + list);
+
+
+        // Important: remove() with Integer
+        ArrayList<Integer> numbers = new ArrayList<>();
+
+        numbers.add(10);
+        numbers.add(20);
+        numbers.add(30);
+
+        // Remove using index
+        numbers.remove(1);                    // Removes index 1 → 20
+
+        // Remove using value
+        numbers.remove(Integer.valueOf(30));  // Removes value 30
+
+        System.out.println("Integer List: " + numbers);
+    }
+}
+```
+
+**Output:**
+
+```text
+Original List: [Apple, Banana]
+After adding at index 1: [Apple, Mango, Banana]
+After removing index 0: [Mango, Banana]
+After removing Banana: [Mango]
+After updating index 0: [Orange]
+Integer List: [10]
+```
+
+### Methods on ArrayList:
+
+| Method                            | Description                                | Use                      | Example Syntax                              |
+| --------------------------------- | ------------------------------------------ | ------------------------ | ------------------------------------------- |
+| `add(E e)`                        | Adds an element at the end                 | Add element              | `list.add("Apple");`                        |
+| `add(int index, E e)`             | Adds an element at a specific index        | Insert element           | `list.add(1, "Mango");`                     |
+| `addAll(Collection c)`            | Adds all elements from another collection  | Add multiple elements    | `list.addAll(List.of("A", "B"));`           |
+| `addAll(int index, Collection c)` | Adds multiple elements at a specific index | Insert multiple elements | `list.addAll(1, List.of("A", "B"));`        |
+| `get(int index)`                  | Returns the element at an index            | Access element           | `list.get(0);`                              |
+| `set(int index, E e)`             | Replaces an element at an index            | Update element           | `list.set(0, "Orange");`                    |
+| `remove(int index)`               | Removes an element by index                | Delete by index          | `list.remove(0);`                           |
+| `remove(Object o)`                | Removes the first matching element         | Delete by value          | `list.remove("Apple");`                     |
+| `removeAll(Collection c)`         | Removes all matching elements              | Delete multiple elements | `list.removeAll(List.of("A", "B"));`        |
+| `clear()`                         | Removes all elements                       | Empty list               | `list.clear();`                             |
+| `size()`                          | Returns the number of elements             | Get size                 | `list.size();`                              |
+| `isEmpty()`                       | Checks whether the list is empty           | Check empty              | `list.isEmpty();`                           |
+| `contains(Object o)`              | Checks whether an element exists           | Search element           | `list.contains("Apple");`                   |
+| `containsAll(Collection c)`       | Checks whether all elements exist          | Search multiple          | `list.containsAll(List.of("A", "B"));`      |
+| `indexOf(Object o)`               | Returns the first matching index           | Find first occurrence    | `list.indexOf("Apple");`                    |
+| `lastIndexOf(Object o)`           | Returns the last matching index            | Find last occurrence     | `list.lastIndexOf("Apple");`                |
+| `toArray()`                       | Converts list to an array                  | Convert to array         | `list.toArray();`                           |
+| `iterator()`                      | Returns an iterator                        | Traverse elements        | `list.iterator();`                          |
+| `listIterator()`                  | Returns a list iterator                    | Traverse/modify          | `list.listIterator();`                      |
+| `subList(int from, int to)`       | Returns part of the list                   | Get sublist              | `list.subList(1, 3);`                       |
+| `removeIf(Predicate)`             | Removes elements matching a condition      | Conditional deletion     | `list.removeIf(x -> x > 5);`                |
+| `replaceAll(UnaryOperator)`       | Replaces every element using a function    | Modify all               | `list.replaceAll(x -> x.toUpperCase());`    |
+| `sort(Comparator)`                | Sorts the list                             | Sort elements            | `list.sort(Comparator.naturalOrder());`     |
+| `forEach(Consumer)`               | Performs an action on each element         | Traverse elements        | `list.forEach(x -> System.out.println(x));` |
+
+---
+
+
