@@ -23,8 +23,9 @@
 
 - [9. Sum of Digits](9_SumOfDigits/README.md)
 - [10. Reverse Digits](10_ReverseDigits/README.md)
+- [11. Prime Testing](11_PrimeTesting/README.md)
 
-<!-- - [11. Prime Testing](11_PrimeTesting/README.md)
+<!-- 
 - [12. Check Power](12_CheckPower/README.md)
 - [13. Overlapping Rectangles](13_OverlappingRectangles/README.md)
 - [14. Factorial](14_Factorial/README.md)

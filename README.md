@@ -20,7 +20,7 @@
 ## Practice
 
 - Problems on DSA & JAVA
-- Problems on Database
+- [Problems on Database & SQL](Practice/SQL_DB/README.md)
 - Interview Qsn
 
 ## Other Links
