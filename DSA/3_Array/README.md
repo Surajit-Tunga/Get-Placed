@@ -468,13 +468,344 @@ After Insertion
 
 | Operation | Complexity |
 |-----------|------------|
-| **Time Complexity** | **O(n)** |
+| **Time Complexity** | **O(1)** |
 | **Space Complexity** | **O(1)** |
 
 ---
 
 ### Deletion:
 
-- Deleting an element to the array.
+- Deleting an element from the array.
 
 #### Delete an Element from the Beginning of an Array:
+
+- Given an array of integers, the task is to delete an element from the beginning of the array.
+```text
+Input: arr[] = [10, 20, 30, 40]
+Output: [20, 30, 40]
+
+Input: arr[] = [20]
+Output: []
+```
+
+**Program:**
+
+```java
+public class Main{
+    public static void main(String[] args){
+        int arr[] = {10,20,30,40};
+        int n = arr.length;
+               
+        System.out.println("Before Deletion");
+        for (int i = 0; i<n; i++){
+            System.out.println(arr[i] + " ");
+        }
+        
+        for (int i = 0; i<n-1; i++){
+            arr[i]=arr[i+1];
+        }
+
+        n--;
+        System.out.println("After Deletion");
+        for (int i = 0; i<n; i++){
+            System.out.println(arr[i] + " ");
+        }
+
+    }
+}
+```
+
+**Output:**
+
+```
+Before Deletion
+10 
+20 
+30 
+40 
+After Deletion
+20 
+30 
+40 
+```
+
+**Complexity Analysis:**
+
+| Operation | Complexity |
+|-----------|------------|
+| **Time Complexity** | **O(n)** |
+| **Space Complexity** | **O(1)** |
+
+#### Delete an Element from a Given Position in an Array:
+- Given an array of integers, the task is to delete an element from a given position in the array.
+```text
+Input: arr[] = [10, 20, 30, 40], pos = 1
+Output: [20, 30, 40]
+
+Input: arr[] = [10, 20, 30, 40], pos = 2
+Output: [10, 30, 40]
+
+Input: arr[] = [10, 20, 30, 40], pos = 4
+Output: [10, 20, 30]
+```
+
+**Program:**
+
+```java
+public class Main{
+    public static void main(String[] args){
+        int arr[] = {10,20,30,40,50,60};
+        int n = arr.length;
+        int pos = 3;
+        int index = pos-1;
+               
+        System.out.println("Before Deletion");
+        for (int i = 0; i<n; i++){
+            System.out.println(arr[i] + " ");
+        }
+        
+        for (int i = index; i<n-1; i++){
+            arr[i]=arr[i+1];
+        }
+
+        n--;
+        System.out.println("After Deletion");
+        for (int i = 0; i<n; i++){
+            System.out.println(arr[i] + " ");
+        }
+
+    }
+}
+```
+
+**Output:**
+
+```
+Before Deletion
+10 
+20 
+30 
+40 
+50 
+60 
+After Deletion
+10 
+20 
+40 
+50 
+60 
+```
+
+**Complexity Analysis:**
+
+| Operation | Complexity |
+|-----------|------------|
+| **Time Complexity** | **O(n)** |
+| **Space Complexity** | **O(1)** |
+
+#### Delete First Occurrence of Given Element from an Array:
+- Given an array of integers, the task is to delete a given element from the array. If there are multiple occurrences of the element, we need to remove only its first occurrence.
+```text
+Input: arr[] = [10, 20, 30, 40], ele = 20
+Output: [10, 30, 40]
+
+Input: arr[] = [10, 20, 30, 40], ele = 25
+Output: [10, 20, 30, 40]
+
+Input: arr[] = [10, 20, 20, 20 30], ele = 20
+Output: [10, 20, 20, 30]
+```
+
+**Program:**
+
+```java
+public class Main{
+    public static void main(String[] args){
+        int arr[] = {10,20,30,40,30,60};
+        int n = arr.length;
+        int ele = 30;
+        int index = -1;
+               
+        System.out.println("Before Deletion");
+        for (int i = 0; i<n; i++){
+            System.out.println(arr[i] + " ");
+        }
+        for (int i = 0; i<n; i++){
+            if(arr[i]==ele){
+                index = i;
+                break;
+            }
+        }       
+        
+        if (index != -1) {
+            for (int i = index; i < n - 1; i++) {
+                arr[i] = arr[i + 1];
+            }
+            n--;
+        }
+
+        System.out.println("After Deletion");
+        for (int i = 0; i<n; i++){
+            System.out.println(arr[i] + " ");
+        }
+
+    }
+}
+```
+
+**Output:**
+
+```text
+Before Deletion
+10 
+20 
+30 
+40 
+30 
+60 
+After Deletion
+10 
+20 
+40 
+30 
+60 
+```
+**Complexity Analysis:**
+
+```
+| Operation | Complexity |
+|-----------|------------|
+| **Time Complexity** | **O(n)** |
+| **Space Complexity** | **O(1)** |
+```
+
+#### Remove All Occurrences of an Element & give final num of elements after deletion in an Array:
+- Given an integer array arr[] and an integer ele the task is to the remove all occurrences of ele from arr[] in-place and return the number of elements which are not equal to ele. If there are k number of elements which are not equal to ele then the input array arr[] should be modified such that the first k elements should contain the elements which are not equal to ele and then the remaining elements.
+
+```text 
+Input: arr[] = [3, 2, 2, 3], ele = 3
+Output: 2
+Explanation: The answer is 2 because there are 2 elements which are not equal to 3 and arr[] will be modified such that the first 2 elements contain the elements which are not equal to 3 and remaining elements can contain any element. So, modified arr[] = [2, 2, _, _]
+
+Input: arr[] = [0, 1, 3, 0, 2, 2, 4, 2], ele = 2
+Output: 5
+Explanation: The answer is 5 because there are 5 elements which are not equal to 2 and arr[] will be modified such that the first 5 elements contain the elements which are not equal to 2 and remaining elements can contain any element. So, modified arr[] = [0, 1, 3, 0, 4, _, _, _]
+```
+
+**Program:**
+
+```java
+public class Main{
+    public static void main(String[] args){
+        int arr[] = {10,20,30,40,30,60};
+        int n = arr.length;
+        int ele = 30;
+        int index = 0;
+               
+        System.out.println("Before Deletion");
+        for (int i = 0; i<n; i++){
+            System.out.println(arr[i] + " ");
+        }
+
+        for (int i = 0; i<n; i++){
+            if (arr[i]!=ele){
+                arr[index] = arr[i];
+                index++;
+            }
+        }  
+
+        n = index;
+
+        System.out.println("Num of Element:" + n);    
+        
+        
+        System.out.println("After Deletion");
+        for (int i = 0; i<n; i++){
+            System.out.println(arr[i] + " ");
+        }
+
+    }
+}
+```
+
+**Output:**
+
+```text
+Before Deletion
+10 
+20 
+30 
+40 
+30 
+60 
+Num of Element:4
+After Deletion
+10 
+20 
+40 
+60  
+```
+**Complexity Analysis:**
+
+```
+| Operation | Complexity |
+|-----------|------------|
+| **Time Complexity** | **O(n)** |
+| **Space Complexity** | **O(1)** |
+```
+
+#### Delete an Element from the end of an array
+- Given an array of integers, the task is to delete an element from the end of the array.
+```text
+Input: arr[] = [10, 20, 30, 40]
+Output: [10, 20, 30]
+
+Input: arr[] = [20]
+Output: []
+```
+
+**Program:**
+```java
+public class Main{
+    public static void main(String[] args){
+        int arr[] = {10,20,30,40};
+        int n = arr.length;
+               
+        System.out.println("Before Deletion");
+        for (int i = 0; i<n; i++){
+            System.out.println(arr[i] + " ");
+        }
+        
+        n--;
+        System.out.println("After Deletion");
+        for (int i = 0; i<n; i++){
+            System.out.println(arr[i] + " ");
+        }
+
+    }
+}
+```
+**Output:**
+```text
+Before Deletion
+10 
+20 
+30 
+40 
+After Deletion
+10 
+20 
+30 
+```
+
+**Complexity Analysis:**
+
+| Operation | Complexity |
+|-----------|------------|
+| **Time Complexity** | **O(1)** |
+| **Space Complexity** | **O(1)** |
+
+> Program Time Complexity: O(n), because the program contains two O(n) printing loops.
+> Deletion Operation Complexity: O(1), because deleting from the end only requires n--.
+
+--- 
