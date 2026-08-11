@@ -749,3 +749,17 @@ class Demo {
 
 ## Garbage Collection & Finalize: 
 
+- Garbage Collection (GC) in Java is an automatic memory management process performed by the Java Virtual Machine (JVM) to find and delete unused, unreachable objects from the heap memory.
+- Objects that are no longer in reachable, meaning no active references to them, are eligible for garbage collection.
+- Unlike languages like C++, java developers cannot explicitly deallocate memory. Garbage collection is automatic and non determinististic.
+- Java uses a **Generational Garbage collection** strategy, which divides memory into different regions *(young, old & permanent)* based on object ages.
+- Garbage collection occurs in the Heap Memory, where all java objects reside.
+- Garbage Collection can affect application performance, particularly if it runs frequently or takes long time to complete.
+
+**Finalization:** Before an object is garbage collectted, the `finalize()` method maybe called, giving the object a chance to cleanup resources. However, its not guaranteed to run, and its usages is generally discouraged.
+
+**Optimization:** Developer can optimize the process indirectly code practice like setting unnecessary object references to null.
+
+**`System.gc()` call:** While `System.gc()` suggests that the JVM performs garbage collection, its not a guarantee.
+
+---
