@@ -17,10 +17,45 @@ Explanation: The given array is not sorted.
 
 ```java
 public class Main{
+    public static boolean isSorted(int arr[], int n){
+        for (int i=0; i<n-1;i++){
+            if(arr[i]<= arr[i+1]){
+                continue;
+            } else {
+                return false; 
+            }
+        }
+        return true;
+    }
     public static void main(String[] args){
-        System.out.print("Check if an Array is Sorted");
+        System.out.print("Program to Check if an Array is Sortedin ascending order or not.");
+
+        int arr[] = {10,20,30,40,50};
+        int n = arr.length;
+
+        System.out.println(isSorted(arr,n));
+        
+
     }
 }
 ```
+
+**Or the logic can be written as:**
+
+```java
+public static boolean isSorted(int arr[],int n){
+    for (int i = 1; i<n; i++){
+        if(arr[i]<arr[i-1]){
+            return false;
+        }
+    }
+    return true;
+}
+```
+
+**Complexity:**
+
+Time Complexity: O(n)
+Space Complexity: O(1) 
 
 ---

@@ -15,6 +15,7 @@
 ## Data Structures and Algorithms
 
 - [3. Array & Matrix](3_Array/README.md)
+- [4. String](4_String/README.md)
 
 
 - [Coding Problems](00_Problems/README.md)

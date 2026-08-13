@@ -8,8 +8,6 @@
 
 ---
 
-## BASIC PROBLEMS
-
 - [1. Check Even or Odd. ](1_EvenOdd/README.md)
 - [2. Program for multiplication table. ](2_Table/README.md)
 - [3. Program for sum of n natural numbers. ](3_SumOfN/README.md)
@@ -18,9 +16,6 @@
 - [6. Sum of squares of first n natural numbers](6_SumOfSq/README.md)
 - [7. Swap Two Numbers](7_SwapTwo/README.md)
 - [8. The dice problem](8_Dice/README.md)
-
-## EASY PROBLEMS
-
 - [9. Sum of Digits](9_SumOfDigits/README.md)
 - [10. Reverse Digits](10_ReverseDigits/README.md)
 - [11. Prime Testing](11_PrimeTesting/README.md)
