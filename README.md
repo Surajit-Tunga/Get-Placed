@@ -19,7 +19,7 @@
 
 ## Practice
 
-- Problems on DSA & JAVA
+- [Problems on DSA & JAVA](Practice/DSA/README.md)
 - [Problems on Database & SQL](Practice/SQL_DB/README.md)
 - Interview Qsn
 
