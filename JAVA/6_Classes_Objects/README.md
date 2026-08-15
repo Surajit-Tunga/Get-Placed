@@ -69,7 +69,7 @@ new Car() → creates a new object in memory
 
 ---
 
-## Using Objects: 2.24
+## Using Objects:
 
 - By using "." operator we can access the object like "product.price".
 - Example:
