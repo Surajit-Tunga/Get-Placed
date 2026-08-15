@@ -48,6 +48,16 @@ String str = new String("Hello World");
 
 ## General Operations performed on String:
 
+### String Traversal:
+
+```java
+String s = "hello";
+
+for (int i = 0; i < s.length(); i++) {
+    System.out.println(s.charAt(i));
+}
+```
+
 ### Length of a String:
 - Given a string s, the task is to find the length of the string.
 
@@ -91,11 +101,90 @@ Explanation: The character 'k' is present at index 3 and 11 in "geeksforgeeks", 
 public class Main{
     public static void main(String[] args){
         String s = "geeksforgeeks";
-        char ch = "k";
-
-        
+        char ch = 'k';
+        System.out.println(s.indexOf(ch));        
     }
 }
+``` 
+**Output:**
+```
+3
+```
+**Complexity:**
+- Time: O(n)
+- Space: O(1)
+> Because indexOf() may need to check every character in the string.
+
+### Check if a string is substring of another:
+- Given two strings txt and pat, the task is to find if pat is a substring of txt. If yes, return the index of the first occurrence, else return -1.
+```text
+Input: txt = "geeksforgeeks", pat = "eks"
+Output: 2
+Explanation: String "eks" is present at index 2 and 10, so 2 is the smallest index.
+
+Input: txt = "geeksforgeeks", pat = "xyz"
+Output: -1.
+Explanation: There is no occurrence of "xyz" in "geeksforgeeks"
+```
+**Progarm:** JAVA
+
+```java
+public class Main{
+    public static int findSubString(String txt, String pat){
+        int n = txt.length();
+        int m = pat.length();
+
+        for (int i=0; i<n; i++){
+            if(txt.charAt(i) == pat.charAt(0)){
+                for (int j=1; j<n;j++){
+                    if(txt.charAt(i+1) == pat.charAt(j)){
+                        return i;
+                    }
+                }
+            }
+        }
+        return -1;
+    }
+
+    public static void main(String[] args){
+        String txt = "geeksforgeeks";
+        String pat = "xyz";
+
+        System.out.println(findSubString( txt, pat));
+    }
+}
+```
+**Output:**
+```
+-1
+```
+**Complexity:**
+
+- Time : O(n*m)
+- Space: O(1)
+
+**OR Program Using Builtin Functions:**
+
+```java
+public static int findSubString(String txt, String pat){
+        int idx = txt.indexOf(pat);
+
+        if (idx != -1){
+            return idx;
+        }
+        return -1;
+    }
+```
+**Complexity:**
+
+- Time : O(n*m)
+- Space: O(1)
+
+### Insert a character in String at a Given Position:
+
+### Deletion of Character in String:
+
+### 
 
 
 
