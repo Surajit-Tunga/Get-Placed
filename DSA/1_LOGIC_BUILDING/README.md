@@ -21,11 +21,12 @@
 - [11. Prime Testing](11_PrimeTesting/README.md)
 - [12. Check Power](12_CheckPower/README.md)
 - [13. Overlapping Rectangles](13_OverlappingRectangles/README.md)
+- [14. Factorial](14_Factorial/README.md)
 
 
 <!-- 
 
-- [14. Factorial](14_Factorial/README.md)
+
 - [15. Pair Cube Count](15_PairCubeCount/README.md)
 - [16. GCD or HCF](16_GCD_HCF/README.md)
 - [17. LCM](17_LCM/README.md)
