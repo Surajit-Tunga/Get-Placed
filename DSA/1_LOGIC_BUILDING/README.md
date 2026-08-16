@@ -8,6 +8,8 @@
 
 ---
 
+## EASY PROBLEMS:
+
 - [1. Check Even or Odd. ](1_EvenOdd/README.md)
 - [2. Program for multiplication table. ](2_Table/README.md)
 - [3. Program for sum of n natural numbers. ](3_SumOfN/README.md)
@@ -46,7 +48,7 @@
 - [32. Print N to 1](32_PrintNTo1/README.md)
 - [33. Power using Recursion](33_PowerRecursion/README.md)
 
-## MEDIUM PROBLEMS
+## MEDIUM PROBLEMS:
 
 - [34. Square Root](34_SquareRoot/README.md)
 - [35. 3 Divisors](35_3Divisors/README.md)
@@ -70,7 +72,7 @@
 - [53. Count Digits](53_CountDigits/README.md)
 - [54. Trailing Zeros in Factorial](54_TrailingZeros/README.md)
 
-## HARD PROBLEMS
+## HARD PROBLEMS:
 
 - [55. Sieve of Eratosthenes](55_SieveOfEratosthenes/README.md)
 - [56. Super Prime](56_SuperPrime/README.md)
