@@ -1,61 +1,49 @@
 # Problems on Array:
 
-## 1_Check if an Array is Sorted - Easy: 
+## Easy:
 
-- Given an array arr[], check if it is sorted in ascending order or not. Equal values are allowed in an array and two consecutive equal values are considered sorted.
-```text
-Input: arr[] = [10, 20, 30, 40, 50]
-Output: true
-Explanation: The given array is sorted.
+- [1. Check if an Array is Sorted](1_IsSorted/README.md)
 
-Input: arr[] = [90, 80, 100, 70, 40, 30]
-Output: false
-Explanation: The given array is not sorted.
-```
+<!-- - [2. Multiply with Adjacent](2_MultiplyAdjacent/README.md)
+- [3. Reverse an Array](3_Reverse/README.md)
+- [4. Reverse an Array in Groups](4_ReverseInGroups/README.md)
+- [5. Rotate an Array](5_Rotate/README.md)
+- [6. Generate All Subarrays](6_GenerateSubarrays/README.md)
+- [7. Arrange Array by Sign](7_ArrangeBySign/README.md)
+- [8. Stock with 1 Transaction](8_StockOneTransaction/README.md)
+- [9. Stock with Multiple Transactions](9_StockMultipleTransactions/README.md)
+- [10. Leaders in an Array](10_Leaders/README.md)
 
-**Solution-Java:**
+## Medium:
 
-```java
-public class Main{
-    public static boolean isSorted(int arr[], int n){
-        for (int i=0; i<n-1;i++){
-            if(arr[i]<= arr[i+1]){
-                continue;
-            } else {
-                return false; 
-            }
-        }
-        return true;
-    }
-    public static void main(String[] args){
-        System.out.print("Program to Check if an Array is Sortedin ascending order or not.");
+- [11. Majority Element](11_MajorityElement/README.md)
+- [12. Majority Element II](12_MajorityElementII/README.md)
+- [13. Sorted Subsequence of 3](13_SortedSubsequence3/README.md)
+- [14. Count Strictly Increasing Subarrays](14_CountIncreasingSubarrays/README.md)
+- [15. Next Permutation](15_NextPermutation/README.md)
+- [16. Kadane's Algorithm](16_KadanesAlgorithm/README.md)
+- [17. Sum of All Subarrays](17_SumAllSubarrays/README.md)
+- [18. Maximum Product Subarray](18_MaxProductSubarray/README.md)
 
-        int arr[] = {10,20,30,40,50};
-        int n = arr.length;
+## 2D Array:
 
-        System.out.println(isSorted(arr,n));
-        
+- [19. Diagonal Traversal](19_DiagonalTraversal/README.md)
+- [20. Magic Square](20_MagicSquare/README.md)
+- [21. Boundary Traversal](21_BoundaryTraversal/README.md)
+- [22. Matrix Spiral](22_MatrixSpiral/README.md)
+- [23. Toeplitz Matrix](23_ToeplitzMatrix/README.md)
+- [24. Matrix Zig-Zag](24_MatrixZigZag/README.md)
+- [25. Transpose of Matrix](25_TransposeMatrix/README.md)
+- [26. Rotate a Matrix by 90](26_RotateMatrix90/README.md)
+- [27. Conway's Game of Life](27_ConwaysGameOfLife/README.md)
+- [28. Queries in a Matrix](28_QueriesInMatrix/README.md)
+- [29. Set Matrix 0](29_SetMatrixZero/README.md) -->
 
-    }
-}
-```
+## Hard:
 
-**Or the logic can be written as:**
-
-```java
-public static boolean isSorted(int arr[],int n){
-    for (int i = 1; i<n; i++){
-        if(arr[i]<arr[i-1]){
-            return false;
-        }
-    }
-    return true;
-}
-```
-
-**Complexity:**
-
-Time Complexity: O(n)
-Space Complexity: O(1) 
+- [30. Maximum Circular Subarray Sum](30_MaxCircularSubarraySum/README.md)
+- [31. Next Smallest Palindrome](31_NextSmallestPalindrome/README.md)
+- [32. Lexicographic Rank](32_LexicographicRank/README.md)
+- [33. Text Justification](33_TextJustification/README.md)
 
 ---
