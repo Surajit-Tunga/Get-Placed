@@ -3,8 +3,9 @@
 ## Easy:
 
 - [1. Check if an Array is Sorted](1_IsSorted/README.md)
+- [2. Multiply with Adjacent](2_MultiplyAdjacent/README.md)
 
-<!-- - [2. Multiply with Adjacent](2_MultiplyAdjacent/README.md)
+<!-- 
 - [3. Reverse an Array](3_Reverse/README.md)
 - [4. Reverse an Array in Groups](4_ReverseInGroups/README.md)
 - [5. Rotate an Array](5_Rotate/README.md)

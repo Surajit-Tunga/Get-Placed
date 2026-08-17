@@ -13,19 +13,15 @@
 ## CS Fundamentals
 
 - [1. DSA](DSA/README.MD)
-- [2. DBMS](DBMS/README.md)
+<!-- - [2. DBMS](DBMS/README.md)
 
-- System Design 
+- System Design  -->
 
 ## Practice
 
 - [Problems on DSA & JAVA](Practice/DSA/README.md)
 - [Problems on Database & SQL](Practice/SQL_DB/README.md)
-- Interview Qsn
-
-## Other Links
-
-- Backend Development (Nodejs)
-- Java full stack Springboot 
+- [Company Wise LeetCode Problems - liquidslr](https://github.com/liquidslr/leetcode-company-wise-problems)
+<!-- - Interview Qsn -->
 
 ---
