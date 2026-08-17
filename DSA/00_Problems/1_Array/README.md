@@ -40,11 +40,11 @@
 - [28. Queries in a Matrix](28_QueriesInMatrix/README.md)
 - [29. Set Matrix 0](29_SetMatrixZero/README.md) -->
 
-## Hard:
+<!-- ## Hard:
 
 - [30. Maximum Circular Subarray Sum](30_MaxCircularSubarraySum/README.md)
 - [31. Next Smallest Palindrome](31_NextSmallestPalindrome/README.md)
 - [32. Lexicographic Rank](32_LexicographicRank/README.md)
-- [33. Text Justification](33_TextJustification/README.md)
+- [33. Text Justification](33_TextJustification/README.md) -->
 
 ---
