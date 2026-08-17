@@ -16,7 +16,7 @@
 
 - [3. Array & Matrix](3_Array/README.md)
 - [4. String](4_String/README.md)
+- [5. Searching](5_Searching/README.md)
 
-
-- [Coding Problems](00_Problems/README.md)
+- [Topic Wise Coding Problems](00_Problems/README.md)
 ---

@@ -7,21 +7,17 @@
 - [1. JAVA](JAVA/README.md)
 - [2. SQL](SQL/README.md)
 
-
 ---
 
 ## CS Fundamentals
 
 - [1. DSA](DSA/README.MD)
-<!-- - [2. DBMS](DBMS/README.md)
 
-- System Design  -->
 
 ## Practice
 
 - [Problems on DSA & JAVA](Practice/DSA/README.md)
 - [Problems on Database & SQL](Practice/SQL_DB/README.md)
 - [Company Wise LeetCode Problems - liquidslr](https://github.com/liquidslr/leetcode-company-wise-problems)
-<!-- - Interview Qsn -->
 
 ---
