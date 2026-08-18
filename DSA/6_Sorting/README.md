@@ -5,25 +5,26 @@
 
 ## Types of Sorting Algorithms:
 
-                         ┌──────────────┐
-                         │    SORTING   │
-                         └──────┬───────┘
-                                │
-              ┌─────────────────┴─────────────────┐
-              │                                   │
-              ▼                                   ▼
-   ┌─────────────────────┐             ┌──────────────────────┐
-   │  Comparison-Based   │             │ Non-Comparison-Based │
-   └──────────┬──────────┘             └──────────┬───────────┘
-              │                                   │
-     ┌────────┼────────┬────────┬────────┐───┐    ├──────────┐
-     ▼        ▼        ▼        ▼        ▼   │    ▼          ▼
-   Bubble  Insertion Selection  Quick   Merge│  Counting    Radix
-    Sort     Sort      Sort     Sort    Sort │    Sort       Sort
-                                             │
-                                             ▼
-                                         Heap Sort
-                                            
+```mermaid
+flowchart TB
+    A["SORTING"]
+
+    A --> B["COMPARISON BASED"]
+    A --> C["NON-COMPARISON BASED"]
+
+    B --> D["Bubble Sort"]
+    B --> E["Insertion Sort"]
+    B --> F["Selection Sort"]
+    B --> G["Quick Sort"]
+    B --> H["Merge Sort"]
+    B --> I["Heap Sort"]
+
+    C --> J["Counting Sort"]
+    C --> K["Radix Sort"]
+
+    D ~~~ E ~~~ F ~~~ G ~~~ H ~~~ I
+    J ~~~ K
+```
 
 --- 
 
@@ -104,9 +105,9 @@ Compare 3 and 2 → Swap
         Sorted ✓
 
 ```
-> Note: No of Pass: `N-1` (`N` is size of array)
-> Note: After `k` passes, the largest `k` must have been moved to the last k positions.
-> Note: After `k` passes, the remaining `N-k` elements are compared and swaped if needed.
+- > Note: No of Pass: `N-1` (`N` is size of array)
+- > Note: After `k` passes, the largest `k` must have been moved to the last k positions.
+- > Note: After `k` passes, the remaining `N-k` elements are compared and swaped if needed.
 
 **Program:** JAVA
 
