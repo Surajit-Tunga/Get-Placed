@@ -2,8 +2,8 @@
 
 ## Easy:
 
-- [1. Check if an Array is Sorted](1_IsSorted/README.md)
-- [2. Multiply with Adjacent](2_MultiplyAdjacent/README.md)
+- [1. Check if an Array is Sorted](1_IsSorted.md)
+- [2. Multiply with Adjacent](2_MultiplyAdjacent.md)
 
 <!-- 
 - [3. Reverse an Array](3_Reverse/README.md)

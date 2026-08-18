@@ -1,8 +1,10 @@
 # Problems on String:
 
-<!-- ## Easy:
+ ## Easy:
 
-- [1. Same Strings](1_SameStrings/README.md)
+- [1. Same Strings](1_SameStrings.md)
+
+<!--
 - [2. Palindrome](2_Palindrome/README.md)
 - [3. Toggle Case](3_ToggleCase/README.md)
 - [4. Remove Occurrences](4_RemoveOccurrences/README.md)
