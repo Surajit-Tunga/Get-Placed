@@ -5,20 +5,25 @@
 
 ## Types of Sorting Algorithms:
 
-                         ┌──────────────────────┐
-                         │       Sorting        │
-                         └──────────┬───────────┘
-                                    │
-                  ┌─────────────────┴─────────────────┐
-                  ▼                                   ▼
-          ┌─────────────────────┐             ┌───────────────────────┐
-          │  Comparison Based   │             │ Non-Comparison Based  │
-          └──────────┬──────────┘             └───────────┬───────────┘
-                     │                                    │
-   ┌────────┬────────┼────────┬──────┬──────┐        ┌────┴─────┐
-   ▼        ▼        ▼        ▼      ▼      ▼        ▼          ▼
-Bubble  Insertion Selection Quick  Merge   Heap   Counting    Radix
- Sort     Sort     Sort     Sort   Sort    sort     Sort       Sort
+                         ┌──────────────┐
+                         │    SORTING   │
+                         └──────┬───────┘
+                                │
+              ┌─────────────────┴─────────────────┐
+              │                                   │
+              ▼                                   ▼
+   ┌─────────────────────┐             ┌──────────────────────┐
+   │  Comparison-Based   │             │ Non-Comparison-Based │
+   └──────────┬──────────┘             └──────────┬───────────┘
+              │                                   │
+     ┌────────┼────────┬────────┬────────┐───┐    ├──────────┐
+     ▼        ▼        ▼        ▼        ▼   │    ▼          ▼
+   Bubble  Insertion Selection  Quick   Merge│  Counting    Radix
+    Sort     Sort      Sort     Sort    Sort │    Sort       Sort
+                                             │
+                                             ▼
+                                         Heap Sort
+                                            
 
 --- 
 
