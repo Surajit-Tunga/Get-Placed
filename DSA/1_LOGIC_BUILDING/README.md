@@ -26,12 +26,13 @@
 - [14. Factorial](14_Factorial/README.md)
 - [15. Pair Cube Count](15_PairCubeCount/README.md)
 - [16. GCD or HCF](16_GCD_HCF/README.md)
+- [17. LCM](17_LCM.md)
 
 
 <!-- 
 
 
-- [17. LCM](17_LCM/README.md)
+
 - [18. Perfect Number](18_PerfectNumber/README.md)
 - [19. Add Two Fractions](19_AddFractions/README.md)
 - [20. Day of the Week](20_DayOfWeek/README.md)
