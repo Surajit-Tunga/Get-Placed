@@ -12,8 +12,11 @@
 import java.util.Scanner;
 
 public class TernaryOperator{
+
     public static void main(String[] args){
+
         Scanner sc = new Scanner(System.in);
+        
         System.out.print("Enter first num:");
         int num1 = sc.nextInt();
         System.out.print("Enter second num:");
@@ -108,5 +111,204 @@ System.out.println(dayName);
 ```
 ---
 
-## Loops:
+## Do-While Loops:
 
+- Syntex:
+
+```java
+do {
+    //body of the loop
+}
+while(condition);
+```
+- Executes block first, then checks condition.
+- Guaranteed to run at least one iteration.
+- Unlike while, first iteration is unconditional.
+- Need to update condition to avoid infinite loop.
+
+**Example:** Take input of age from user & if its not between 0-100 then take input again.
+
+```java
+import java.util.Scanner;
+
+public class Main{
+
+    public static void main(String[] args){
+
+        Scanner sc = new Scanner(System.in);
+
+        //Using While Loop
+
+        System.out.print("Enter Your Age:");
+        int age = sc.nextInt();
+
+        while (age<0 || age>100){
+
+            System.out.print("Enter Your Age:");
+            age = sc.nextInt();
+        }
+
+        System.out.print("Your age is:" + age);
+    }
+}
+```
+**Using Do-While:**
+```java
+int age;
+do {
+    System.out.print("Enter Your Age:");
+    age = sc.nextInt();
+} while (age<0 || age>100);
+```
+---
+
+## For Loop:
+
+- Syntex:
+```java
+for (initialisation; condition; update){
+    //Body
+}
+```
+- Standard loop for running code multiple times.
+
+**Example:** Print Table of n
+
+```java
+import java.util.Scanner;
+
+public class Main{
+
+    public static void getTable(int n){
+
+        for (int i=1;i<=10;i++){
+            System.out.println(n + "*" + i +"="+ n*i);
+        }
+    }
+
+    public static void main(String[] args){
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter a num:");
+        int n = sc.nextInt();
+
+        getTable(n);
+    }
+}
+```
+---
+
+## For Each loop:
+
+- Syntax:
+```java
+for (dataType variable : array/collection){
+    // Body
+}
+```
+- Used to traverse each element of an array or collection.
+- It is simpler than a traditional for loop when you don't need the index.
+
+**Example:** Print all elements of an array.
+
+```java
+public class Main{
+
+    public static void main(String[] args){
+
+        int[] arr = {10, 20, 30, 40, 50};
+
+        for (int num : arr){
+            System.out.println(num);
+        }
+    }
+}
+```
+---
+
+## Using break & continue: 
+
+- **Break** lets you stop a loop early.
+- **Continue** used to skip one iteration or the current.
+
+**Example:** Break
+```java
+// Traversal with break
+
+public class Main{
+
+    public static void main(String[] args){
+
+        int[] arr = {10, 20, 30, 40, 50};
+
+        for (int num : arr){
+            if (num == 30){
+                break;
+            }
+            System.out.println(num);
+        }
+    }
+}
+
+```
+**Output:**
+```text
+10
+20
+```
+**Example:** Continue
+```java
+// Traversal with continue
+
+public class Main{
+    public static void main(String[] args){
+
+        int[] arr = {10, 20, 30, 40, 50};
+
+        for (int num : arr){
+            if (num == 30){
+                continue;
+            }
+            System.out.println(num);
+        }
+    }
+}
+```
+**Output:**
+```text
+10
+20
+40
+50
+```
+---
+
+## Recursion:
+
+- Recursion is a function when it calls itself.
+
+**Example:** Factorial of n.
+```java
+public class Main{
+
+    public static int calFact(int n){
+        if(n == 0 || n == 1){
+            return 1;
+        }
+
+        return n*calFact(n-1);
+    }
+
+    public static void main(String[] args){
+
+        System.out.println(calFact(5));
+    }
+}
+```
+---
+
+## Random Numbers & Math class:
+
+
+--- 
