@@ -4,9 +4,10 @@
 
 - [1. Check if an Array is Sorted](1_IsSorted.md)
 - [2. Multiply with Adjacent](2_MultiplyAdjacent.md)
+- [3. Reverse an Array](3_Reverse.md)
 
 <!-- 
-- [3. Reverse an Array](3_Reverse/README.md)
+
 - [4. Reverse an Array in Groups](4_ReverseInGroups/README.md)
 - [5. Rotate an Array](5_Rotate/README.md)
 - [6. Generate All Subarrays](6_GenerateSubarrays/README.md)

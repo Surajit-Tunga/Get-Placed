@@ -310,5 +310,84 @@ public class Main{
 
 ## Random Numbers & Math class:
 
+- `Math` is a built-in Java class (`java.lang.Math`) that provides methods for performing mathematical operations.
+
+### Mostly used methods of math class:
+
+| Sl. No. | Method            | Description                                    | Example                       |
+| ------: | ----------------- | ---------------------------------------------- | ----------------------------- |
+|       1 | `Math.abs()`      | Returns absolute value                         | `Math.abs(-10)` → `10`        |
+|       2 | `Math.ceil()`     | Rounds a number up                             | `Math.ceil(4.2)` → `5.0`      |
+|       3 | `Math.floor()`    | Rounds a number down                           | `Math.floor(4.8)` → `4.0`     |
+|       4 | `Math.max()`      | Returns the larger value                       | `Math.max(10, 20)` → `20`     |
+|       5 | `Math.min()`      | Returns the smaller value                      | `Math.min(10, 20)` → `10`     |
+|       6 | `Math.pow()`      | Returns a number raised to a power             | `Math.pow(2, 3)` → `8.0`      |
+|       7 | `Math.random()`   | Generates a random number from `0.0` to `<1.0` | `Math.random()` → `0.73`      |
+|       8 | `Math.round()`    | Rounds to the nearest integer                  | `Math.round(4.6)` → `5`       |
+|       9 | `Math.sqrt()`     | Returns square root                            | `Math.sqrt(25)` → `5.0`       |
+|      10 | `Math.cbrt()`     | Returns cube root                              | `Math.cbrt(27)` → `3.0`       |
+|      11 | `Math.floorDiv()` | Performs floor division                        | `Math.floorDiv(-7, 2)` → `-4` |
+|      12 | `Math.floorMod()` | Returns floor modulus                          | `Math.floorMod(-7, 2)` → `1`  |
+
+### Other Methods:
+
+| Sl. No. | Method                  | Description                                 | Example                             |
+| ------: | ----------------------- | ------------------------------------------- | ----------------------------------- |
+|       1 | `Math.absExact()`       | Absolute value with overflow checking       | `Math.absExact(-10)` → `10`         |
+|       2 | `Math.acos()`           | Returns inverse cosine                      | `Math.acos(1)` → `0.0`              |
+|       3 | `Math.addExact()`       | Adds values with overflow checking          | `Math.addExact(10, 20)` → `30`      |
+|       4 | `Math.asin()`           | Returns inverse sine                        | `Math.asin(0)` → `0.0`              |
+|       5 | `Math.atan()`           | Returns inverse tangent                     | `Math.atan(0)` → `0.0`              |
+|       6 | `Math.atan2()`          | Returns angle from coordinates              | `Math.atan2(1, 1)`                  |
+|       7 | `Math.copySign()`       | Copies sign of one number                   | `Math.copySign(5, -1)` → `-5.0`     |
+|       8 | `Math.cos()`            | Returns cosine                              | `Math.cos(0)` → `1.0`               |
+|       9 | `Math.decrementExact()` | Decreases value by 1 with overflow checking | `Math.decrementExact(5)` → `4`      |
+|      10 | `Math.exp()`            | Returns `e` raised to a power               | `Math.exp(1)`                       |
+|      11 | `Math.expm1()`          | Returns `e^x - 1`                           | `Math.expm1(1)`                     |
+|      12 | `Math.getExponent()`    | Returns exponent of floating-point value    | `Math.getExponent(8.0)`             |
+|      13 | `Math.hypot()`          | Calculates `√(x² + y²)`                     | `Math.hypot(3, 4)` → `5.0`          |
+|      14 | `Math.incrementExact()` | Increases value by 1 with overflow checking | `Math.incrementExact(5)` → `6`      |
+|      15 | `Math.log()`            | Returns natural logarithm                   | `Math.log(10)`                      |
+|      16 | `Math.log10()`          | Returns base-10 logarithm                   | `Math.log10(100)` → `2.0`           |
+|      17 | `Math.log1p()`          | Calculates `log(1 + x)`                     | `Math.log1p(10)`                    |
+|      18 | `Math.multiplyExact()`  | Multiplies with overflow checking           | `Math.multiplyExact(5, 4)` → `20`   |
+|      19 | `Math.multiplyHigh()`   | Returns high bits of multiplication         | `Math.multiplyHigh(a, b)`           |
+|      20 | `Math.negateExact()`    | Negates a value with overflow checking      | `Math.negateExact(5)` → `-5`        |
+|      21 | `Math.rint()`           | Rounds to nearest integer as `double`       | `Math.rint(4.6)` → `5.0`            |
+|      22 | `Math.scalb()`          | Multiplies by `2^n`                         | `Math.scalb(2, 3)` → `16.0`         |
+|      23 | `Math.signum()`         | Returns the sign of a number                | `Math.signum(-10)` → `-1.0`         |
+|      24 | `Math.sin()`            | Returns sine                                | `Math.sin(0)` → `0.0`               |
+|      25 | `Math.subtractExact()`  | Subtracts with overflow checking            | `Math.subtractExact(20, 5)` → `15`  |
+|      26 | `Math.tan()`            | Returns tangent                             | `Math.tan(0)` → `0.0`               |
+|      27 | `Math.toDegrees()`      | Converts radians to degrees                 | `Math.toDegrees(Math.PI)` → `180.0` |
+|      28 | `Math.toIntExact()`     | Converts `long` to `int` safely             | `Math.toIntExact(100L)` → `100`     |
+|      29 | `Math.toRadians()`      | Converts degrees to radians                 | `Math.toRadians(180)` → `π`         |
+|      30 | `Math.ulp()`            | Returns floating-point precision value      | `Math.ulp(1.0)`                     |
+
+### Constants:
+
+| Constant  | Description    | Example                  |
+| --------- | -------------- | ------------------------ |
+| `Math.PI` | Value of π     | `Math.PI` → `3.14159...` |
+| `Math.E`  | Euler's number | `Math.E` → `2.71828...`  |
+
+**Example:**  Find Max of two num.
+
+```java
+public class Main {
+    public static void main(String[] args) {
+
+        int a = 10;
+        int b = 20;
+
+        System.out.println(Math.max(a, b));
+    }
+}
+```
+> `Math` belongs to the `java.lang` package, which Java automatically imports.
 
 --- 
+
+##  toString Method:
+
+- `toString` provides a String representation of an object.

@@ -2,7 +2,7 @@
 
 ## Linear Search:
 
-* [1. Largest](1_Largest/README.md)
+* [1. Largest](1_Largest.md)
 
 <!-- * [2. Second Largest](2_SecondLargest/README.md)
 * [3. Local Min & Max](3_LocalMinMax/README.md)
