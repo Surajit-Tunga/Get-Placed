@@ -390,4 +390,246 @@ public class Main {
 
 ##  toString Method:
 
+- Syntex:
+
+```java
+    @Override
+    public String toString() {
+        return "Name: " + name + ", Age: " + age;
+    }
+```
+
 - `toString` provides a String representation of an object.
+- It inherited from the Object class.
+- By default, it returns a string containing the class name and hash code.
+- We can override toString() to return meaningful information about an object.
+- It is automatically called when an object is printed using System.out.println().
+
+**Example:**
+
+```java
+class Student {
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Student s = new Student();
+
+        // Explicitly calling toString()
+        System.out.println(s.toString());  // Output: Student@2a139a55
+    }
+}
+```
+
+> When `toString()` is **not overridden**, it returns **the class name + `@` + the object's hash code in hexadecimal**.
+
+
+**Example with with toString() overridden**
+```java
+class Student {
+
+    String name;
+    int age;
+
+    Student(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    // Override toString() to provide a meaningful String representation
+    @Override
+    public String toString() {
+        return "Name: " + name + ", Age: " + age;
+    }
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Student s = new Student("Surajit", 22);
+
+        // println() automatically calls the object's toString() method
+        System.out.println(s);  //Output: Name: Surajit, Age: 22
+    }
+}
+```
+---
+
+## String Class:
+
+![](../img/str.png)
+
+- **Immutability:** Once created, a String Objects value cannot be changed.
+- **String Pool:** Java maintains a pool of strings for efficiency. When a new string is created, it checked against the pool for a match to reuse.
+- **Comparing:** `equals()` method for value comparison, `==` operator checks reference/object equality.
+```java
+String s1 = new String("Hello");
+String s2 = new String("Hello");
+
+// equals() compares the content
+System.out.println(s1.equals(s2));  // true
+
+// == compares the references
+System.out.println(s1 == s2);        // false
+```
+- **Concatination:** Strings can be conxatenated using the `+` operator, but each concatination creates a new string.
+- Being immutable, strings can use more memory when frequently modified.
+
+**Methods:** 
+
+| S.No. | Method                            | Description                                 | Example                                           |
+| ----: | --------------------------------- | ------------------------------------------- | ------------------------------------------------- |
+|     1 | `length()`                        | Returns the length of the string            | `"Hello".length()` → `5`                          |
+|     2 | `charAt(i)`                       | Returns character at index `i`              | `"Hello".charAt(1)` → `'e'`                       |
+|     3 | `substring(begin)`                | Returns substring from `begin` to end       | `"Hello".substring(2)` → `"llo"`                  |
+|     4 | `substring(begin, end)`           | Returns substring from `begin` to `end-1`   | `"Hello".substring(1,4)` → `"ell"`                |
+|     5 | `equals(str)`                     | Compares string contents                    | `"Hi".equals("Hi")` → `true`                      |
+|     6 | `equalsIgnoreCase(str)`           | Compares contents ignoring case             | `"Hello".equalsIgnoreCase("hello")` → `true`      |
+|     7 | `compareTo(str)`                  | Compares two strings lexicographically      | `"abc".compareTo("abd")` → `-1`                   |
+|     8 | `compareToIgnoreCase(str)`        | Lexicographical comparison ignoring case    | `"ABC".compareToIgnoreCase("abc")` → `0`          |
+|     9 | `toUpperCase()`                   | Converts string to uppercase                | `"hello".toUpperCase()` → `"HELLO"`               |
+|    10 | `toLowerCase()`                   | Converts string to lowercase                | `"HELLO".toLowerCase()` → `"hello"`               |
+|    11 | `trim()`                          | Removes leading and trailing spaces         | `" Hi ".trim()` → `"Hi"`                          |
+|    12 | `strip()`                         | Removes leading and trailing whitespace     | `" Hi ".strip()` → `"Hi"`                         |
+|    13 | `contains(str)`                   | Checks if string contains a sequence        | `"Hello".contains("ell")` → `true`                |
+|    14 | `startsWith(str)`                 | Checks starting sequence                    | `"Hello".startsWith("He")` → `true`               |
+|    15 | `endsWith(str)`                   | Checks ending sequence                      | `"Hello".endsWith("lo")` → `true`                 |
+|    16 | `indexOf(str)`                    | Returns first index of occurrence           | `"Hello".indexOf("l")` → `2`                      |
+|    17 | `lastIndexOf(str)`                | Returns last index of occurrence            | `"Hello".lastIndexOf("l")` → `3`                  |
+|    18 | `replace(old,new)`                | Replaces characters/sequences               | `"Hello".replace('l','x')` → `"Hexxo"`            |
+|    19 | `replaceAll(regex,replacement)`   | Replaces all matching patterns              | `"a1b2".replaceAll("\\d","")` → `"ab"`            |
+|    20 | `replaceFirst(regex,replacement)` | Replaces first matching pattern             | `"a1b2".replaceFirst("\\d","")` → `"ab2"`         |
+|    21 | `concat(str)`                     | Joins another string                        | `"Hello".concat(" World")` → `"Hello World"`      |
+|    22 | `isEmpty()`                       | Checks if length is `0`                     | `"".isEmpty()` → `true`                           |
+|    23 | `isBlank()`                       | Checks if empty or contains only whitespace | `"   ".isBlank()` → `true`                        |
+|    24 | `split(regex)`                    | Splits string into an array                 | `"A,B,C".split(",")` → `["A","B","C"]`            |
+|    25 | `toCharArray()`                   | Converts string to character array          | `"Hello".toCharArray()` → `['H','e','l','l','o']` |
+|    26 | `getBytes()`                      | Converts string to byte array               | `"ABC".getBytes()`                                |
+|    27 | `valueOf(x)`                      | Converts a value to a String                | `String.valueOf(123)` → `"123"`                   |
+|    28 | `join(delimiter, strings)`        | Joins strings with delimiter                | `String.join("-", "A","B","C")` → `"A-B-C"`       |
+|    29 | `repeat(n)`                       | Repeats the string `n` times                | `"Hi".repeat(3)` → `"HiHiHi"`                     |
+|    30 | `matches(regex)`                  | Checks whether string matches a regex       | `"123".matches("\\d+")` → `true`                  |
+
+> Array uses `length` as a field or property, while String uses `length()` as a method.
+
+---
+
+## printf Format Specifiers in Java:
+
+| Specifier | Used for                    | Example                            |
+| --------- | --------------------------- | ---------------------------------- |
+| `%d`      | Integer                     | `printf("%d", 10)`                 |
+| `%f`      | Floating-point              | `printf("%f", 10.5)`               |
+| `%.2f`    | Float with 2 decimal places | `printf("%.2f", 10.567)` → `10.57` |
+| `%c`      | Character                   | `printf("%c", 'A')`                |
+| `%s`      | String                      | `printf("%s", "Hello")`            |
+| `%b`      | Boolean                     | `printf("%b", true)`               |
+| `%x`      | Hexadecimal                 | `printf("%x", 255)` → `ff`         |
+| `%o`      | Octal                       | `printf("%o", 8)` → `10`           |
+| `%e`      | Scientific notation         | `printf("%e", 1000.0)`             |
+| `%n`      | New line                    | `printf("Hello%nWorld")`           |
+
+**printf() Flags in Java:**
+
+| Flag | Meaning                                 | Example                  | Output       |
+| ---- | --------------------------------------- | ------------------------ | ------------ |
+| `-`  | Left-align                              | `printf("%-10s", "Hi")`  | `Hi        ` |
+| `+`  | Show `+` for positive numbers           | `printf("%+d", 10)`      | `+10`        |
+| `0`  | Pad with zeros                          | `printf("%05d", 42)`     | `00042`      |
+| ` `  | Space before positive number            | `printf("% d", 42)`      | ` 42`        |
+| `,`  | Add grouping separator                  | `printf("%,d", 1000000)` | `1,000,000`  |
+| `(`  | Enclose negative numbers in parentheses | `printf("%(d", -100)`    | `(100)`      |
+
+**Example:**
+```java
+String name = "Surajit";
+int marks = 99;
+
+System.out.println("Hello," + name + "Your marks are:" + marks);
+
+System.out.printf("Hello %s, your marks are: %d", name, marks);
+
+System.out.printf("Hello %20s", name);  // Output: "Hello              Surajit"    //Space of 20
+System.out.printf("Hello %-20s 0", name);  // Output: "Hello Surajit              0"      //Space of 20
+
+```
+---
+
+## StringBuffer & StringBuilder:
+
+| Feature          | String                          | StringBuffer                | StringBuilder                |
+| ---------------- | ------------------------------- | --------------------------- | ---------------------------- |
+| **Mutable**      | ❌ No                            | ✅ Yes                       | ✅ Yes                        |
+| **Storage**      | String Pool / Heap              | Heap                        | Heap                         |
+| **Thread-safe**  | ❌ No                            | ✅ Yes                       | ❌ No                         |
+| **Synchronized** | ❌ No                            | ✅ Yes                       | ❌ No                         |
+| **Speed**        | Slow for frequent modifications | Slower                      | **Fastest**                  |
+| **Best Use**     | Fixed text                      | Multi-threaded applications | Single-threaded applications |
+
+
+- **String** → when the text doesn't need modification; **StringBuffer** → when modifying strings in a multi-threaded environment; **StringBuilder** → when frequently modifying strings in a single-threaded environment.
+
+**Common Methods:** 
+- Both StringBuffer and StringBuilder provide methods such as:
+
+| Method           | Description                | Example                  |
+| ---------------- | -------------------------- | ------------------------ |
+| `append()`       | Adds text at the end       | `sb.append("Hi")`        |
+| `insert()`       | Inserts text at an index   | `sb.insert(2, "Hi")`     |
+| `delete()`       | Removes characters         | `sb.delete(1, 3)`        |
+| `deleteCharAt()` | Removes one character      | `sb.deleteCharAt(2)`     |
+| `replace()`      | Replaces characters        | `sb.replace(0, 2, "Hi")` |
+| `reverse()`      | Reverses the string        | `sb.reverse()`           |
+| `length()`       | Returns length             | `sb.length()`            |
+| `charAt()`       | Returns character at index | `sb.charAt(0)`           |
+| `setCharAt()`    | Changes a character        | `sb.setCharAt(0, 'A')`   |
+| `toString()`     | Converts to String         | `sb.toString()`          |
+
+**Example:**
+
+```java
+public class Main {
+
+    public static void main(String[] args) {
+
+        // StringBuffer
+        StringBuffer sb = new StringBuffer("Hello");
+
+        // Modifies the existing object
+        sb.append(" World");
+
+        System.out.println(sb);  // Hello World
+
+
+        // StringBuilder
+        StringBuilder sbd = new StringBuilder("Hello");
+
+        // Modifies the existing object
+        sbd.append(" Java");
+
+        System.out.println(sbd); // Hello Java
+    }
+}
+```
+---
+
+## Final Keyword: 
+
+```java
+public class Main{
+    public final String name = "Surajit";
+
+    public void setName(String name){
+        this.name = Jit;  //Cannont reassign in final variables.
+    }
+}
+```
+
+- When applied to a variable, the variable become constent, ie. it cannot be chananged once initiated.
+- Used for performance optimization.
+- final variable must be initialized before theconstractor completes, reducing null pointers error. 
+
+---

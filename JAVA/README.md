@@ -12,4 +12,5 @@
 - [5. While Loop, Methods & Arrays](5_Loop/README.md)
 - [6. Classes & Objects](6_Classes_Objects/README.md)
 - [7. Control Statements, Math & String](7_Control_Statements_Math_String/README.md)
+- [8. Encapsulation](8_Encapsulation/README.md)
 
