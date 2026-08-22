@@ -41,7 +41,8 @@ public class Main{
     // Time: O(log(min(a,b)))
 
     public static int calLCM(int a, int b){
-    return (a / calGCD(a, b)) * b;
+        
+        return (a / calGCD(a, b)) * b;
     }
 
     // Add two fractions and simplify the result
