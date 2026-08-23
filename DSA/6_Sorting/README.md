@@ -313,7 +313,7 @@ public class Main{
 
         insertionSort(arr,n);
 
-        for(int i = 0; i<arr.length; i++){
+        for(int i = 0; i<n; i++){
             System.out.print(arr[i]);
         }
     }
@@ -371,14 +371,237 @@ so after i = 2 iteration: arr ={1,3,4}
 
 ## Selection Sort: 
 
+- Selection Sort is a comparison-based sorting algorithm. It sorts by repeatedly selecting the smallest (or largest) element from the unsorted portion and swapping it with the first unsorted element.
 
+1. Find the smallest element and swap it with the first element. This way we get the smallest element at its correct position.
+2. Then find the smallest among remaining elements (or second smallest) and swap it with the second element.
+3. We keep doing this until we get all elements moved to correct position.
+
+**Example:**
+```text
+Suppose we need to sort an array = {5,3,8,4,2}
+
+Pass 1:
+
+[ 5 | 3 | 8 | 4 | 2 ]
+  ↑
+  Unsorted portion
+
+Find the smallest element → 2
+
+Swap 2 with 5
+
+[ 2 | 3 | 8 | 4 | 5 ]
+  ✓
+  Sorted portion
+
+
+Pass 2:
+
+[ 2 | 3 | 8 | 4 | 5 ]
+      ↑
+      Unsorted portion
+
+Find the smallest element → 3
+
+3 is already in its correct position
+
+[ 2 | 3 | 8 | 4 | 5 ]
+  ✓   ✓
+  Sorted portion
+
+
+Pass 3:
+
+[ 2 | 3 | 8 | 4 | 5 ]
+          ↑
+          Unsorted portion
+
+Find the smallest element → 4
+
+Swap 4 with 8
+
+[ 2 | 3 | 4 | 8 | 5 ]
+  ✓   ✓   ✓
+  Sorted portion
+
+
+Pass 4:
+
+[ 2 | 3 | 4 | 8 | 5 ]
+              ↑
+              Unsorted portion
+
+Find the smallest element → 5
+
+Swap 5 with 8
+
+[ 2 | 3 | 4 | 5 | 8 ]
+  ✓   ✓   ✓   ✓   ✓
+      Sorted ✓
+```
+
+**Program:** JAVA
+
+```java
+public class Main{
+
+    public static void selectionSort(int[] arr, int n) {
+
+        for(int i = 0; i < n - 1; i ++){
+
+            int temp = arr[i];
+            int min = arr[i];
+            int index = i;
+
+            for(int j = i+1; j < n; j ++){
+
+  
+                
+                if (min > arr [j]){
+
+                    min = arr[j];
+                    index = j;
+                }
+            }
+
+            arr[i] = arr[index];
+            arr[index] = temp;
+        }  
+    }
+    public static void main(String[] args) {
+        
+        int arr[]= {2,6,8,7,1,4};
+        int n = arr.length;
+
+        selectionSort(arr,n);
+
+        for(int i = 0; i < n; i ++){
+            System.out.print(arr[i]);
+        }
+    }
+}
+```
+
+**Complexity:**
+
+- Time: O(n2)
+- Space: O(1)
 
 ---
 
 ## Quick Sort:
 
+- QuickSort is a sorting algorithm based on the Divide and Conquer that picks an element as a pivot and partitions the given array around the picked pivot by placing the pivot in its correct position in the sorted array. .
+
+- There are mainly three steps in the algorithm:
+
+1. Choose a Pivot: Select an element from the array as the pivot. The choice of pivot can vary (e.g., first element, last element, random element, or median).
+2. Partition the Array: Re arrange the array around the pivot. After partitioning, all elements smaller than the pivot will be on its left, and all elements greater than the pivot will be on its right.
+3. Recursively Call: Recursively apply the same process to the two partitioned sub-arrays.
+4. Base Case: The recursion stops when there is only one element left in the sub-array, as a single element is already sorted.
+
+**Example:**
+```text
+Suppose we need to sort an array = {5,3,8,4,2}
+
+Rule: Choose the last element as the pivot.
+      Place smaller elements on the left.
+      Place larger elements on the right.
+
+Pass 1:
+
+[ 5 | 3 | 8 | 4 | 2 ]
+                    ↑
+              Pivot = 2
+
+Compare elements with 2:
+
+5 > 2 → Right
+3 > 2 → Right
+8 > 2 → Right
+4 > 2 → Right
+
+Place 2 at its correct position
+
+[ 2 | 3 | 8 | 4 | 5 ]
+  ✓
+  Pivot in correct position
+
+
+Now sort the right portion:
+
+[ 3 | 8 | 4 | 5 ]
+
+Choose last element as pivot
+
+Pivot = 5
+
+Compare:
+
+3 < 5 → Left
+8 > 5 → Right
+4 < 5 → Left
+
+Place 5 at its correct position
+
+[ 3 | 4 | 5 | 8 ]
+          ✓
+          Pivot in correct position
+
+
+Now sort the left portion:
+
+[ 3 | 4 ]
+
+Pivot = 4
+
+3 < 4 → Left
+
+[ 3 | 4 ]
+      ✓
+
+
+Final sorted array:
+
+[ 2 | 3 | 4 | 5 | 8 ]
+  ✓   ✓   ✓   ✓   ✓
+      Sorted ✓
+```
+
+**Program:** JAVA
+
+```java
+public class Main{
+
+    public static void quickSort(int[] arr, int n) {
+
+        // 
+    }
+    public static void main(String[] args) {
+        
+        int arr[]= {2,6,8,7,1,4};
+        int n = arr.length;
+
+        quickSort(arr,n);
+
+        for(int i = 0; i < n; i ++){
+            System.out.print(arr[i]);
+        }
+    }
+}
+```
+
+---
+
+## Merge Sort: 
 
 
 ---
 
-##
+## Heap Sort:
+
+
+---
+
+## 

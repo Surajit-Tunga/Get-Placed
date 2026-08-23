@@ -6,9 +6,10 @@
 - [2. Multiply with Adjacent](2_MultiplyAdjacent.md)
 - [3. Reverse an Array](3_Reverse.md)
 - [4. Reverse an Array in Groups](4_ReverseInGroups.md)
+- [5. Rotate an Array](5_Rotate.md)
 
 <!-- 
-- [5. Rotate an Array](5_Rotate/README.md)
+
 - [6. Generate All Subarrays](6_GenerateSubarrays/README.md)
 - [7. Arrange Array by Sign](7_ArrangeBySign/README.md)
 - [8. Stock with 1 Transaction](8_StockOneTransaction/README.md)
