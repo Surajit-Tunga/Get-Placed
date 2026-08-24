@@ -5,7 +5,6 @@
 
 [Ref](https://www.geeksforgeeks.org/dsa/logic-building-problems/)
 
-
 ---
 
 ## EASY PROBLEMS:
@@ -29,12 +28,10 @@
 - [17. LCM](17_LCM.md)
 - [18. Perfect Number](18_PerfectNumber.md)
 - [19. Add Two Fractions](19_AddFractions.md)
+- [20. Day of the Week [Leetcode-1185]](20_DayOfWeek.md)
+- [21. Nth Fibonacci [Leetcode-509]](21_NthFibonacci.md)
 
 <!-- 
-
-
-- [20. Day of the Week](20_DayOfWeek/README.md)
-- [21. Nth Fibonacci](21_NthFibonacci/README.md)
 - [22. Decimal to Binary](22_DecimalToBinary/README.md)
 - [23. N-th term of 1, 3, 6, 10, 15, 21…](23_NthTermSeries/README.md)
 - [24. Armstrong Number](24_ArmstrongNumber/README.md)
@@ -86,4 +83,25 @@
 - [64. Non-Attacking Knights](64_NonAttackingKnights/README.md)
 - [65. Water Jug Problem](65_WaterJug/README.md) -->
 
+<!-- 9 → 1281
+10 → 7
+12 → 231 / 326
+13 → 836
+18 → 507
+19 → 592
+20 → 1185
+21 → 509
+24 → 1134
+25 → 9
+26 → 258
+34 → 69
+43 → 118 Pascal's Triangle
+50 → 78 Subsets
+53 → 2520
+54 → 172
+55 → 204
+57 → 1344
+60 → 773
+62 → 1823
+65 → 365 -->
 ---
