@@ -1,4 +1,4 @@
-# Nth Fibonacci [Leetcode-509]
+# Nth Fibonacci [Leetcode-509: Easy]
 
 - Given a positive integer n, find the nth Fibonacci number.
 

@@ -1,4 +1,4 @@
-# Find day of the week for a given date [Leetcode 1185]
+# Find day of the week for a given date [Leetcode 1185: Easy]
 
 - Given an array date[] = [d, m, y], where d denotes the day, m denotes the month, and y denotes the year, Write a program that calculates the day of the week for any particular date in the past or future.
 

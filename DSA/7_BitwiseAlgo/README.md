@@ -122,3 +122,5 @@ Example:
 
 ## Problems on Bitwise Algorithm:
 
+### Set a bit in the Number:
+

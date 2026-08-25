@@ -6,7 +6,7 @@
 - [2. Multiply with Adjacent](2_MultiplyAdjacent.md)
 - [3. Reverse an Array](3_Reverse.md)
 - [4. Reverse an Array in Groups](4_ReverseInGroups.md)
-- [5. Rotate an Array](5_Rotate.md)
+- [5. Rotate an Array [Leetcode-189: Medium]](5_Rotate.md)
 
 <!-- 
 

@@ -13,4 +13,5 @@
 11. [577. Employee Bonus: Easy](577.md)
 12. [1280. Students and Examinations: Easy](1280.md)
 13. [570. Managers with at Least 5 Direct Reports: Medium](570.md)
+14. [1934. Confirmation Rate: Medium](1934.md)
 

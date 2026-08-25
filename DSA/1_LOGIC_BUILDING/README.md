@@ -28,11 +28,12 @@
 - [17. LCM](17_LCM.md)
 - [18. Perfect Number](18_PerfectNumber.md)
 - [19. Add Two Fractions](19_AddFractions.md)
-- [20. Day of the Week [Leetcode-1185]](20_DayOfWeek.md)
-- [21. Nth Fibonacci [Leetcode-509]](21_NthFibonacci.md)
+- [20. Day of the Week [Leetcode-1185: Easy]](20_DayOfWeek.md)
+- [21. Nth Fibonacci [Leetcode-509: Easy]](21_NthFibonacci.md)
+- [22. Decimal to Binary](22_DecimalToBinary.md)
 
 <!-- 
-- [22. Decimal to Binary](22_DecimalToBinary/README.md)
+
 - [23. N-th term of 1, 3, 6, 10, 15, 21…](23_NthTermSeries/README.md)
 - [24. Armstrong Number](24_ArmstrongNumber/README.md)
 - [25. Palindrome Number](25_PalindromeNumber/README.md)
