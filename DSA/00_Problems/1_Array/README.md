@@ -2,7 +2,7 @@
 
 ## Easy:
 
-- [1. Check if an Array is Sorted](1_IsSorted.md)
+- [1. Check if an Array is Sorted [Leetcode-1752: Easy]](1_IsSorted.md)
 - [2. Multiply with Adjacent](2_MultiplyAdjacent.md)
 - [3. Reverse an Array](3_Reverse.md)
 - [4. Reverse an Array in Groups](4_ReverseInGroups.md)
