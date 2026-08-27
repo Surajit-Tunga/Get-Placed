@@ -15,3 +15,4 @@
 13. [570. Managers with at Least 5 Direct Reports: Medium](570.md)
 14. [1934. Confirmation Rate: Medium](1934.md)
 15. [620. Not Boring Movies: Easy](620.md)
+16. [1251. Average Selling Price: Easy](1251.md)
