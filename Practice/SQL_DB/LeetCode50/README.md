@@ -16,3 +16,4 @@
 14. [1934. Confirmation Rate: Medium](1934.md)
 15. [620. Not Boring Movies: Easy](620.md)
 16. [1251. Average Selling Price: Easy](1251.md)
+17. [1075. Project Employees I: Easy](1075.md)
