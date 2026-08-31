@@ -32,11 +32,12 @@
 - [21. Nth Fibonacci [Leetcode-509: Easy]](21_NthFibonacci.md)
 - [22. Decimal to Binary](22_DecimalToBinary.md)
 - [23. N-th term of 1, 3, 6, 10, 15, 21…](23_NthTermSeries.md)
+- [24. Armstrong Number [Leetcode-1134: Easy]](24_ArmstrongNumber.md)
 
 <!-- 
 
 
-- [24. Armstrong Number](24_ArmstrongNumber/README.md)
+
 - [25. Palindrome Number](25_PalindromeNumber/README.md)
 - [26. Digit Root](26_DigitRoot/README.md)
 - [27. Sum of Consecutive Numbers](27_SumConsecutive/README.md)

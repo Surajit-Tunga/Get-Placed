@@ -17,3 +17,5 @@
 15. [620. Not Boring Movies: Easy](620.md)
 16. [1251. Average Selling Price: Easy](1251.md)
 17. [1075. Project Employees I: Easy](1075.md)
+18. [1633. Percentage of Users Attended a Contest: Easy](1633.md)
+19. [1211. Queries Quality and Percentage: Easy](1211.md)
