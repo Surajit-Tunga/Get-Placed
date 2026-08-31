@@ -140,7 +140,7 @@ Hash Pool          Hash Table
 ---
 
 ## Collision Resolution Methods:
-
+```TEXT
 Collision Resolution
 │
 ├── Separate Chaining
@@ -149,6 +149,7 @@ Collision Resolution
     ├── Linear Probing
     ├── Quadratic Probing
     └── Double Hashing
+```
 
 ### Separate Chaining: 
 
