@@ -22,8 +22,8 @@
 - [5. SEARCHING](5_Searching/README.md)
 - [6. SORTING](6_Sorting/README.md)
 - [7. BIT MANIPULATON](7_BitwiseAlgo/README.md)
-- [8. Hashing](8_Hashing/README.md)
-
+- [8. HASHING](8_Hashing/README.md)
+- [9. TWO POINTERS](9_TwoPointers/README.md)
 
 
 ## PROBLEMS:

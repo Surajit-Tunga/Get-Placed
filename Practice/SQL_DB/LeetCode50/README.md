@@ -19,3 +19,4 @@
 17. [1075. Project Employees I: Easy](1075.md)
 18. [1633. Percentage of Users Attended a Contest: Easy](1633.md)
 19. [1211. Queries Quality and Percentage: Easy](1211.md)
+20. [1193. Monthly Transactions I: Medium](1193.md)
