@@ -3,8 +3,9 @@
 ## Linear Search:
 
 * [1. Largest](1_Largest.md)
-
-<!-- * [2. Second Largest](2_SecondLargest/README.md)
+* [2. Second Largest](2_SecondLargest.md)
+* [0. Third Maximum Number[Leetcode-414: Easy]](414.md)
+<!-- 
 * [3. Local Min & Max](3_LocalMinMax/README.md)
 
 ## Binary Search:

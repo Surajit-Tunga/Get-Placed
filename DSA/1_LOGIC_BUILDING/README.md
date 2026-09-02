@@ -34,13 +34,14 @@
 - [23. N-th term of 1, 3, 6, 10, 15, 21…](23_NthTermSeries.md)
 - [24. Armstrong Number [Leetcode-1134: Easy]](24_ArmstrongNumber.md)
 - [25. Palindrome Number [Leetcode-9: Easy]](25_PalindromeNumber.md)
+- [26. Digit Root [Leetcode-258: Easy]](26_DigitRoot.md)
 
 <!-- 
 
 
 
 
-- [26. Digit Root](26_DigitRoot/README.md)
+
 - [27. Sum of Consecutive Numbers](27_SumConsecutive/README.md)
 - [28. Floyd's Triangle](28_FloydTriangle/README.md)
 - [29. Right Half Pyramid](29_RightHalfPyramid/README.md)
