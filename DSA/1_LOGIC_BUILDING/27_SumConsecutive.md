@@ -20,7 +20,39 @@ Explanation: 24 can be expressed as: 7 + 8 + 9 = 24.
 **Solution:** JAVA
 
 ```java
+public class Main {
 
+    public static boolean checkConsecutiveSum(int n) {
+
+      for (int i = 1; i < n; i++) {
+
+        int num = 0;
+
+        for (int j = i; j < n; j++) {
+
+            num += j;
+
+            if (num == n) {
+                return true;
+            }
+
+            if (num > n) {
+                break;
+            }
+        }
+      }
+
+      return false;
+    }
+
+    public static void main(String[] args){
+        System.out.print(checkConsecutiveSum(24));
+    }
+}
 ```
+**Complexity:** 
+
+- Time: O(n2)
+- Space: O(1)
 
 ---

@@ -25,6 +25,7 @@
 - [8. HASHING](8_Hashing/README.md)
 - [9. TWO POINTERS](9_TwoPointers/README.md)
 - [10. SLIDING WINDOW](10_SlidingWindow/README.md)
+- [11. PREFIX SUM](11_PrefixSum/README.md)
 
 
 ## PROBLEMS:
