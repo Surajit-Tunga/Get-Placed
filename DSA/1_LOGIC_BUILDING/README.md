@@ -9,21 +9,21 @@
 
 ## EASY PROBLEMS:
 
-- [1. Check Even or Odd. ](1_EvenOdd/README.md)
-- [2. Program for multiplication table. ](2_Table/README.md)
-- [3. Program for sum of n natural numbers. ](3_SumOfN/README.md)
-- [4. Closest to n and Divisible by m. ](4_Closest/README.md)
-- [5. Print Solid Rectangle Star Pattern. ](5_SolidRectPattern/README.md)
-- [6. Sum of squares of first n natural numbers](6_SumOfSq/README.md)
-- [7. Swap Two Numbers](7_SwapTwo/README.md)
-- [8. The dice problem](8_Dice/README.md)
-- [9. Sum of Digits](9_SumOfDigits/README.md)
-- [10. Reverse Digits](10_ReverseDigits/README.md)
-- [11. Prime Testing](11_PrimeTesting/README.md)
-- [12. Check Power](12_CheckPower/README.md)
-- [13. Overlapping Rectangles](13_OverlappingRectangles/README.md)
-- [14. Factorial](14_Factorial/README.md)
-- [15. Pair Cube Count](15_PairCubeCount/README.md)
+- [1. Check Even or Odd. ](1_EvenOdd.md)
+- [2. Program for multiplication table. ](2_Table.md)
+- [3. Program for sum of n natural numbers. ](3_SumOfN.md)
+- [4. Closest to n and Divisible by m. ](4_Closest.md)
+- [5. Print Solid Rectangle Star Pattern. ](5_SolidRectPattern.md)
+- [6. Sum of squares of first n natural numbers](6_SumOfSq.md)
+- [7. Swap Two Numbers](7_SwapTwo.md)
+- [8. The dice problem](8_Dice.md)
+- [9. Sum of Digits](9_SumOfDigits.md)
+- [10. Reverse Digits](10_ReverseDigits.md)
+- [11. Prime Testing](11_PrimeTesting.md)
+- [12. Check Power](12_CheckPower.md)
+- [13. Overlapping Rectangles](13_OverlappingRectangles.md)
+- [14. Factorial](14_Factorial.md)
+- [15. Pair Cube Count](15_PairCubeCount.md)
 - [16. GCD or HCF](16_GCD_HCF/README.md)
 - [17. LCM](17_LCM.md)
 - [18. Perfect Number](18_PerfectNumber.md)
@@ -35,14 +35,11 @@
 - [24. Armstrong Number [Leetcode-1134: Easy]](24_ArmstrongNumber.md)
 - [25. Palindrome Number [Leetcode-9: Easy]](25_PalindromeNumber.md)
 - [26. Digit Root [Leetcode-258: Easy]](26_DigitRoot.md)
+- [27. Sum of Consecutive Numbers](27_SumConsecutive.md)
 
 <!-- 
 
 
-
-
-
-- [27. Sum of Consecutive Numbers](27_SumConsecutive/README.md)
 - [28. Floyd's Triangle](28_FloydTriangle/README.md)
 - [29. Right Half Pyramid](29_RightHalfPyramid/README.md)
 - [30. Hollow Rectangle](30_HollowRectangle/README.md)
