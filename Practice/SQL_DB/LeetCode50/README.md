@@ -21,3 +21,4 @@
 19. [1211. Queries Quality and Percentage: Easy](1211.md)
 20. [1193. Monthly Transactions I: Medium](1193.md)
 21. [1174. Immediate Food Delivery II: Medium](1174.md)
+22. [550. Game Play Analysis IV: Medium-Hard](550.md)

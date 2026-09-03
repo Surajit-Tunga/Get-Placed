@@ -24,7 +24,7 @@
 - [13. Overlapping Rectangles](13_OverlappingRectangles.md)
 - [14. Factorial](14_Factorial.md)
 - [15. Pair Cube Count](15_PairCubeCount.md)
-- [16. GCD or HCF](16_GCD_HCF/README.md)
+- [16. GCD or HCF](16_GCD_HCF.md)
 - [17. LCM](17_LCM.md)
 - [18. Perfect Number](18_PerfectNumber.md)
 - [19. Add Two Fractions](19_AddFractions.md)
