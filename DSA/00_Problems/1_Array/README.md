@@ -1,22 +1,20 @@
 # Problems on Array:
 
-## Easy:
-
 - [1. Check if an Array is Sorted [Leetcode-1752: Easy]](1_IsSorted.md)
 - [2. Multiply with Adjacent](2_MultiplyAdjacent.md)
 - [3. Reverse an Array](3_Reverse.md)
 - [4. Reverse an Array in Groups](4_ReverseInGroups.md)
 - [5. Rotate an Array [Leetcode-189: Medium]](5_Rotate.md)
 - [6. Generate All Subarrays](6_GenerateSubarrays.md)
+- [7. Arrange Array by Sign[Leetcode-2149: Medium]](7_ArrangeBySign.md)
 
 <!-- 
 
-- [7. Arrange Array by Sign](7_ArrangeBySign/README.md)
+
 - [8. Stock with 1 Transaction](8_StockOneTransaction/README.md)
 - [9. Stock with Multiple Transactions](9_StockMultipleTransactions/README.md)
 - [10. Leaders in an Array](10_Leaders/README.md)
 
-## Medium:
 
 - [11. Majority Element](11_MajorityElement/README.md)
 - [12. Majority Element II](12_MajorityElementII/README.md)
@@ -27,7 +25,6 @@
 - [17. Sum of All Subarrays](17_SumAllSubarrays/README.md)
 - [18. Maximum Product Subarray](18_MaxProductSubarray/README.md)
 
-## 2D Array:
 
 - [19. Diagonal Traversal](19_DiagonalTraversal/README.md)
 - [20. Magic Square](20_MagicSquare/README.md)
@@ -41,7 +38,7 @@
 - [28. Queries in a Matrix](28_QueriesInMatrix/README.md)
 - [29. Set Matrix 0](29_SetMatrixZero/README.md) -->
 
-<!-- ## Hard:
+<!-- 
 
 - [30. Maximum Circular Subarray Sum](30_MaxCircularSubarraySum/README.md)
 - [31. Next Smallest Palindrome](31_NextSmallestPalindrome/README.md)

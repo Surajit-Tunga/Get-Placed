@@ -1,11 +1,10 @@
 # Problems on String:
 
- ## Easy:
-
 - [1. Same Strings](1_SameStrings.md)
+- [2. Palindrome [Leetcode-125: Easy]](2_Palindrome.md)
 
 <!--
-- [2. Palindrome](2_Palindrome/README.md)
+
 - [3. Toggle Case](3_ToggleCase/README.md)
 - [4. Remove Occurrences](4_RemoveOccurrences/README.md)
 - [5. Remove Spaces](5_RemoveSpaces/README.md)
@@ -19,7 +18,7 @@
 - [10. URLify](10_URLify/README.md)
 - [11. Multiply Large Numbers](11_MultiplyLargeNumbers/README.md) -->
 
-<!-- 1-125
+<!-- 
 2-125
 3-709
 4-1910

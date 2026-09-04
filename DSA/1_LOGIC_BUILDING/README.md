@@ -36,11 +36,11 @@
 - [25. Palindrome Number [Leetcode-9: Easy]](25_PalindromeNumber.md)
 - [26. Digit Root [Leetcode-258: Easy]](26_DigitRoot.md)
 - [27. Sum of Consecutive Numbers](27_SumConsecutive.md)
+- [28. Floyd's Triangle](28_FloydTriangle.md)
 
 <!-- 
 
 
-- [28. Floyd's Triangle](28_FloydTriangle/README.md)
 - [29. Right Half Pyramid](29_RightHalfPyramid/README.md)
 - [30. Hollow Rectangle](30_HollowRectangle/README.md)
 - [31. Print 1 to N](31_Print1ToN/README.md)
