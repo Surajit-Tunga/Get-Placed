@@ -7,11 +7,12 @@
 - [5. Rotate an Array [Leetcode-189: Medium]](5_Rotate.md)
 - [6. Generate All Subarrays](6_GenerateSubarrays.md)
 - [7. Arrange Array by Sign[Leetcode-2149: Medium]](7_ArrangeBySign.md)
+- [8. Stock with 1 Transaction[Leetcode-121: Easy]](8_StockOneTransaction.md)
 
 <!-- 
 
 
-- [8. Stock with 1 Transaction](8_StockOneTransaction/README.md)
+
 - [9. Stock with Multiple Transactions](9_StockMultipleTransactions/README.md)
 - [10. Leaders in an Array](10_Leaders/README.md)
 

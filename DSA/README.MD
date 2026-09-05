@@ -26,6 +26,7 @@
 - [9. TWO POINTERS](9_TwoPointers/README.md)
 - [10. SLIDING WINDOW](10_SlidingWindow/README.md)
 - [11. PREFIX SUM](11_PrefixSum/README.md)
+- [12. BACKTRACKING](12_Backtracking/README.md)
 
 
 ## PROBLEMS:
