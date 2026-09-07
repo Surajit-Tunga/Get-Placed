@@ -7,7 +7,7 @@
 
 ---
 
-## EASY PROBLEMS:
+## PROBLEMS:
 
 - [1. Check Even or Odd. ](1_EvenOdd.md)
 - [2. Program for multiplication table. ](2_Table.md)
@@ -38,50 +38,44 @@
 - [27. Sum of Consecutive Numbers](27_SumConsecutive.md)
 - [28. Floyd's Triangle](28_FloydTriangle.md)
 - [29. Right Half Pyramid](29_RightHalfPyramid.md)
+- [30. Hollow Rectangle](30_HollowRectangle.md)
+
 
 <!-- 
-- [30. Hollow Rectangle](30_HollowRectangle/README.md)
-- [31. Print 1 to N](31_Print1ToN/README.md)
-- [32. Print N to 1](32_PrintNTo1/README.md)
-- [33. Power using Recursion](33_PowerRecursion/README.md)
+- [31. Square Root](31_SquareRoot.md)
+- [32. 3 Divisors](32_3Divisors.md)
+- [33. Divisibility by 11](33_DivBy11.md)
+- [34. Divisibility by 13](34_DivBy13.md)
+- [35. K-th Digit in a^b](35_KthDigitPower.md)
+- [36. Fraction to Recurring Decimal](36_FractionToRecurring.md)
+- [37. Recurring Sequence in a Fraction](37_RecurringSequence.md)
+- [38. Compute nPr](38_nPr.md)
+- [39. Compute nCr](39_nCr.md)
+- [40. Pascal's Triangle](40_PascalsTriangle.md)
+- [41. All Factors (Or Divisors)](41_AllFactors.md)
+- [42. Prime Factorization](42_PrimeFactorization.md)
+- [43. Largest Prime Factor](43_LargestPrimeFactor.md)
+- [44. Modular Exponentiation](44_ModularExponentiation.md)
+- [45. nth Catalan Number](45_CatalanNumber.md)
+- [46. Binomial Coefficient](46_BinomialCoefficient.md)
+- [47. Power Set](47_PowerSet.md)
+- [48. Pyramid Pattern](48_Pyramid.md)
+- [49. Hollow Diamond](49_HollowDiamond.md)
+- [50. Count Digits](50_CountDigits.md)
+- [51. Trailing Zeros in Factorial](51_TrailingZeros.md)
+- [52. Sieve of Eratosthenes](52_SieveOfEratosthenes.md)
+- [53. Super Prime](53_SuperPrime.md)
+- [54. Clock Angle](54_ClockAngle.md)
+- [55. Tower of Hanoi](55_TowerOfHanoi.md)
+- [56. Rat and Poisoned](56_RatAndPoisoned.md)
+- [57. 8 Puzzle Problem](57_8Puzzle.md)
+- [58. Euler's Totient Function](58_EulersTotient.md)
+- [59. Josephus Problem](59_JosephusProblem.md)
+- [60. Butterfly Pattern](60_Butterfly.md)
+- [61. Non-Attacking Knights](61_NonAttackingKnights.md)
+- [62. Water Jug Problem](62_WaterJug.md) -->
 
-## MEDIUM PROBLEMS:
 
-- [34. Square Root](34_SquareRoot/README.md)
-- [35. 3 Divisors](35_3Divisors/README.md)
-- [36. Divisibility by 11](36_DivBy11/README.md)
-- [37. Divisibility by 13](37_DivBy13/README.md)
-- [38. K-th Digit in a^b](38_KthDigitPower/README.md)
-- [39. Fraction to Recurring Decimal](39_FractionToRecurring/README.md)
-- [40. Recurring Sequence in a Fraction](40_RecurringSequence/README.md)
-- [41. Compute nPr](41_nPr/README.md)
-- [42. Compute nCr](42_nCr/README.md)
-- [43. Pascal's Triangle](43_PascalsTriangle/README.md)
-- [44. All Factors (Or Divisors)](44_AllFactors/README.md)
-- [45. Prime Factorization](45_PrimeFactorization/README.md)
-- [46. Largest Prime Factor](46_LargestPrimeFactor/README.md)
-- [47. Modular Exponentiation](47_ModularExponentiation/README.md)
-- [48. nth Catalan Number](48_CatalanNumber/README.md)
-- [49. Binomial Coefficient](49_BinomialCoefficient/README.md)
-- [50. Power Set](50_PowerSet/README.md)
-- [51. Pyramid Pattern](51_Pyramid/README.md)
-- [52. Hollow Diamond](52_HollowDiamond/README.md)
-- [53. Count Digits](53_CountDigits/README.md)
-- [54. Trailing Zeros in Factorial](54_TrailingZeros/README.md)
-
-## HARD PROBLEMS:
-
-- [55. Sieve of Eratosthenes](55_SieveOfEratosthenes/README.md)
-- [56. Super Prime](56_SuperPrime/README.md)
-- [57. Clock Angle](57_ClockAngle/README.md)
-- [58. Tower of Hanoi](58_TowerOfHanoi/README.md)
-- [59. Rat and Poisoned](59_RatAndPoisoned/README.md)
-- [60. 8 Puzzle Problem](60_8Puzzle/README.md)
-- [61. Euler's Totient Function](61_EulersTotient/README.md)
-- [62. Josephus Problem](62_JosephusProblem/README.md)
-- [63. Butterfly Pattern](63_Butterfly/README.md)
-- [64. Non-Attacking Knights](64_NonAttackingKnights/README.md)
-- [65. Water Jug Problem](65_WaterJug/README.md) -->
 
 <!-- 9 → 1281
 10 → 7

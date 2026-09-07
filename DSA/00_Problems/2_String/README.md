@@ -11,9 +11,6 @@
 - [6. Check Subsequence](6_CheckSubsequence/README.md)
 - [7. First Non-Repeating Character](7_FirstNonRepeating/README.md)
 - [8. Pangram](8_Pangram/README.md)
-
-## Medium:
-
 - [9. Implement atoi](9_Atoi/README.md)
 - [10. URLify](10_URLify/README.md)
 - [11. Multiply Large Numbers](11_MultiplyLargeNumbers/README.md) -->

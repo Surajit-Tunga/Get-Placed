@@ -1,1 +1,1 @@
-1. Hashing-->Separate Channing;
+1. Hashing,Strings

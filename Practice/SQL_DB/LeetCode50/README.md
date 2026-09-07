@@ -24,3 +24,5 @@
 22. [550. Game Play Analysis IV: Medium-Hard](550.md)
 23. [2356. Number of Unique Subjects Taught by Each Teacher: Easy](2356.md)
 24. [1141. User Activity for the Past 30 Days I: Easy](1141.md)
+25. [1070. Product Sales Analysis III: Medium](1070.md)
+26. [596. Classes With at Least 5 Students: Easy](596.md)

@@ -1,6 +1,5 @@
 # Problems on Hashing:
 
-## Basic Hashing:
 
 - [1. Linear Probing](1_LinearProbing.md)
 
@@ -29,8 +28,6 @@
 - [12. Isomorphic Strings](12_IsomorphicStrings.md)
 
 
-## Hashing for Frequency:
-
 - [13. Count Frequencies](13_CountFrequencies.md)
 
 - [14. Most Frequent Element](14_MostFrequent.md)
@@ -39,8 +36,6 @@
 
 - [16. Anagrams](16_Anagrams.md)
 
-
-## Subsequence:
 
 - [17. Longest Consecutive Subsequence](17_LongestConsecutiveSubsequence.md)
 
