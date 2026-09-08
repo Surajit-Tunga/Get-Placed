@@ -26,3 +26,6 @@
 24. [1141. User Activity for the Past 30 Days I: Easy](1141.md)
 25. [1070. Product Sales Analysis III: Medium](1070.md)
 26. [596. Classes With at Least 5 Students: Easy](596.md)
+27. [1729. Find Followers Count: Easy](1729.md)
+
+---
