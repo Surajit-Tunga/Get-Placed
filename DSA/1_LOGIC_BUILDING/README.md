@@ -40,11 +40,12 @@
 - [29. Right Half Pyramid](29_RightHalfPyramid.md)
 - [30. Hollow Rectangle](30_HollowRectangle.md)
 - [31. Square Root](31_SquareRoot.md)
+- [32. 3 Divisors](32_3Divisors.md)
 
 
 <!-- 
 
-- [32. 3 Divisors](32_3Divisors.md)
+
 - [33. Divisibility by 11](33_DivBy11.md)
 - [34. Divisibility by 13](34_DivBy13.md)
 - [35. K-th Digit in a^b](35_KthDigitPower.md)
